@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "ETUSIVU",
+    "listing": "AUTOT",
+    "about": "TIETOA"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Tervetuloa Garage35:n sivustolle",
+      "title": "LÖYDÄ TÄYDELLINEN UUSI AUTO",
+      "subtitle": "Tutustu laajaan valikoimaamme premium-ajoneuvoja",
+      "cta": "LUE LISÄÄ",
+      "learnMore": "Lue lisää",
+      "stats": {
+        "cars": "Autoa saatavilla",
+        "experience": "Vuoden kokemus",
+        "support": "Tuki saatavilla"
+      }
+    },
+    "featured": {
+      "title": "Esitellyt autot",
+      "subtitle": "Tutustu premium-autovalikoimaamme",
+      "viewDetails": "Katso lisätiedot",
+      "viewAll": "Katso kaikki autot",
+      "featured": "ESITELTY"
+    },
+    "whyChooseUs": {
+      "title": "Miksi valita meidät?",
+      "subtitle": "Koe autoalan huippupalvelua",
+      "features": {
+        "expert": {
+          "title": "Asiantunteva ohjaus",
+          "description": "Ammattimaista neuvontaa kokeneelta tiimiltämme"
+        },
+        "trusted": {
+          "title": "Luotettava palvelu",
+          "description": "Rakennamme suhteita luotettavan palvelun kautta"
+        },
+        "selection": {
+          "title": "Laaja valikoima",
+          "description": "Kattava valikoima premium-ajoneuvoja"
+        }
+      }
+    },
+    "stats": {
+      "carsAvailable": {
+        "number": "1000+",
+        "label": "Autoa saatavilla"
+      },
+      "happyCustomers": {
+        "number": "5000+",
+        "label": "Tyytyväistä asiakasta"
+      },
+      "yearsExperience": {
+        "number": "15+",
+        "label": "Vuoden kokemus"
+      },
+      "satisfactionRate": {
+        "number": "100%",
+        "label": "Tyytyväisyysaste"
+      }
+    },
+    "testimonials": {
+      "title": "Mitä asiakkaamme sanovat",
+      "subtitle": "Aitoja kokemuksia asiakkailtamme",
+      "first": {
+        "role": "Yrittäjä",
+        "text": "Erinomaista palvelua ja fantastinen valikoima premium-autoja. Tiimi oli uskomattoman avulias löytämään täydellisen auton tarpeisiini."
+      },
+      "second": {
+        "role": "Ammattikuski",
+        "text": "Autojen laatu ja asiakaspalvelu ovat ensiluokkaisia. He tekivät koko prosessista sujuvan ja miellyttävän."
+      },
+      "third": {
+        "role": "Liikemies",
+        "text": "Heidän asiantuntemuksensa ja huomio yksityiskohtiin on huomattavaa. En voisi olla tyytyväisempi hankintaani ja jatkuvaan tukeen."
+      }
+    },
+    "brands": {
+      "title": "Luotetut merkkimme",
+      "subtitle": "Teemme yhteistyötä maailman johtavien automerkkien kanssa"
+    },
+    "services": {
+      "title": "Palvelumme",
+      "tradeIn": {
+        "title": "Vaihtoautopalvelu",
+        "description": "Saat parhaan arvon nykyisestä autostasi reilulla vaihto-ohjelmalla"
+      },
+      "maintenance": {
+        "title": "Huolto",
+        "description": "Ammattimaista huoltoa ja korjauspalvelua sertifioiduilta teknikoilta"
+      },
+      "financing": {
+        "title": "Rahoitusvaihtoehdot",
+        "description": "Joustavat rahoitusratkaisut tarpeisiisi ja budjettiisi"
+      },
+      "warranty": {
+        "title": "Laajennettu takuu",
+        "description": "Kattava takuuturva mielenrauhasi takaamiseksi"
+      }
+    },
+    "cta": {
+      "title": "Valmis löytämään täydellisen auton?",
+      "description": "Selaa valikoimaamme tai ota yhteyttä",
+      "primary": "Katso valikoima",
+      "secondary": "Ota yhteyttä"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Tietoa Garage35:stä",
+      "subtitle": "Luotettu kumppanisi premium-autoissa"
+    },
+    "mission": {
+      "title": "Tehtävämme",
+      "description": "Tarjoamme poikkeuksellisia autokokemuksia henkilökohtaisen palvelun kautta"
+    },
+    "values": {
+      "title": "Arvomme",
+      "items": {
+        "integrity": {
+          "title": "Rehellisyys",
+          "description": "Rehellistä ja läpinäkyvää toimintaa"
+        },
+        "excellence": {
+          "title": "Erinomaisuus",
+          "description": "Sitoutuminen parhaaseen palveluun"
+        },
+        "customer": {
+          "title": "Asiakaslähtöisyys",
+          "description": "Tyytyväisyytesi on prioriteettimme"
+        }
+      }
+    },
+    "contact": {
+      "title": "Vieraile näyttelytilassamme",
+      "description": "Koe valikoimamme paikan päällä",
+      "cta": "Ota yhteyttä"
+    },
+    "findUs": {
+      "title": "Löydä meidät",
+      "description": "Vieraile näyttelytilassamme tutustuaksesi premium-autovalikoimaamme ja tavataksesi asiantuntijatiimimme"
+    }
+  },
+  "listings": {
+    "hero": {
+      "title": "Autovalikoimamme",
+      "subtitle": "Tutustu premium-autovalikoimaamme"
+    },
+    "car": {
+      "specs": {
+        "seats": "Istuimet",
+        "bags": "Laukut",
+        "transmission": "Vaihteisto",
+        "mileage": "Kilometrit",
+        "ac": "Ilmastointi"
+      },
+      "features": {
+        "cancellation": "Maksuton peruutus",
+        "guarantee": "Hintatakuu",
+        "liability": "Vastuuvakuutus"
+      },
+      "price": {
+        "perDay": "päivässä"
+      },
+      "cta": "Näytä Nettiautossa"
+    },
+    "pagination": {
+      "previous": "Edellinen",
+      "next": "Seuraava"
+    }
+  },
+  "footer": {
+    "description": "Luotettu kumppanisi täydellisen auton löytämisessä. Tarjoamme laadukkaita autoja ja erinomaista palvelua.",
+    "quickLinks": {
+      "title": "Pikalinkit",
+      "home": "Etusivu",
+      "about": "Tietoa meistä",
+      "listing": "Autot",
+      "contact": "Ota yhteyttä"
+    },
+    "contact": {
+      "title": "Yhteystiedot",
+      "phone": "+358 123 456 789",
+      "email": "info@garage35.fi",
+      "address": "Tampere, Suomi"
+    },
+    "hours": {
+      "title": "Aukioloajat",
+      "weekdays": "Maanantai - Perjantai: 9:00 - 18:00",
+      "saturday": "Lauantai: 9:00 - 17:00",
+      "sunday": "Sunnuntai: Suljettu"
+    },
+    "copyright": {
+      "start": "©",
+      "end": "Garage35. Kaikki oikeudet pidätetään."
+    }
+  }
+}

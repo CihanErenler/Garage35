@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "HOME",
+    "listing": "LISTING",
+    "about": "ABOUT"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Welcome to Garage35",
+      "title": "FIND YOUR PERFECT NEW CAR",
+      "subtitle": "Explore our extensive collection of premium vehicles",
+      "cta": "LEARN MORE",
+      "learnMore": "Learn More",
+      "stats": {
+        "cars": "Cars Available",
+        "experience": "Years Experience",
+        "support": "Support Available"
+      }
+    },
+    "featured": {
+      "title": "Featured Cars",
+      "subtitle": "Explore our selection of premium vehicles",
+      "viewDetails": "View Details",
+      "viewAll": "View All Listings",
+      "featured": "FEATURED"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "subtitle": "Experience excellence in automotive services",
+      "features": {
+        "expert": {
+          "title": "Expert Guidance",
+          "description": "Professional advice from our experienced team"
+        },
+        "trusted": {
+          "title": "Trusted Service",
+          "description": "Building relationships through reliable service"
+        },
+        "selection": {
+          "title": "Wide Selection",
+          "description": "Extensive range of premium vehicles"
+        }
+      }
+    },
+    "stats": {
+      "carsAvailable": {
+        "number": "1000+",
+        "label": "Cars Available"
+      },
+      "happyCustomers": {
+        "number": "5000+",
+        "label": "Happy Customers"
+      },
+      "yearsExperience": {
+        "number": "15+",
+        "label": "Years Experience"
+      },
+      "satisfactionRate": {
+        "number": "100%",
+        "label": "Satisfaction Rate"
+      }
+    },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "subtitle": "Real experiences from our valued clients",
+      "first": {
+        "role": "Business Owner",
+        "text": "Excellent service and a fantastic selection of premium vehicles. The team was incredibly helpful in finding the perfect car for my needs."
+      },
+      "second": {
+        "role": "Professional Driver",
+        "text": "The quality of vehicles and customer service is outstanding. They made the entire process smooth and enjoyable."
+      },
+      "third": {
+        "role": "Entrepreneur",
+        "text": "Their expertise and attention to detail is remarkable. I couldn't be happier with my purchase and the ongoing support."
+      }
+    },
+    "brands": {
+      "title": "Our Trusted Brands",
+      "subtitle": "We work with the world's leading automotive brands"
+    },
+    "services": {
+      "title": "Our Services",
+      "tradeIn": {
+        "title": "Trade-In Services",
+        "description": "Get the best value for your current vehicle with our fair trade-in program"
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "Professional maintenance and repair services by certified technicians"
+      },
+      "financing": {
+        "title": "Financing Options",
+        "description": "Flexible financing solutions tailored to your needs and budget"
+      },
+      "warranty": {
+        "title": "Extended Warranty",
+        "description": "Comprehensive warranty coverage for your peace of mind"
+      }
+    },
+    "cta": {
+      "title": "Ready to Find Your Perfect Car?",
+      "description": "Browse our collection or contact us for assistance",
+      "primary": "View Inventory",
+      "secondary": "Contact Us"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Garage35",
+      "subtitle": "Your Trusted Partner in Premium Automobiles"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Delivering exceptional automotive experiences through personalized service"
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "integrity": {
+          "title": "Integrity",
+          "description": "Honest and transparent dealings"
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Commitment to superior service"
+        },
+        "customer": {
+          "title": "Customer Focus",
+          "description": "Your satisfaction is our priority"
+        }
+      }
+    },
+    "contact": {
+      "title": "Visit Our Showroom",
+      "description": "Experience our collection in person",
+      "cta": "Contact Us"
+    },
+    "findUs": {
+      "title": "Find Us",
+      "description": "Visit our showroom to explore our premium vehicle collection and meet our expert team"
+    }
+  },
+  "listings": {
+    "hero": {
+      "title": "Our Vehicle Collection",
+      "subtitle": "Explore our premium selection of vehicles"
+    },
+    "car": {
+      "specs": {
+        "seats": "Seats",
+        "bags": "Bags",
+        "transmission": "Transmission",
+        "mileage": "Mileage",
+        "ac": "A/C"
+      },
+      "features": {
+        "cancellation": "Free Cancellation",
+        "guarantee": "Price Guarantee",
+        "liability": "Third Party Liability"
+      },
+      "price": {
+        "perDay": "per day"
+      },
+      "cta": "Display on Nettiauto"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner in finding the perfect vehicle. We provide quality cars and exceptional service.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About Us",
+      "listing": "Car Listing",
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "title": "Contact Info",
+      "phone": "+358 123 456 789",
+      "email": "info@garage35.fi",
+      "address": "Tampere, Finland"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday: 9:00 - 18:00",
+      "saturday": "Saturday: 9:00 - 17:00",
+      "sunday": "Sunday: Closed"
+    },
+    "copyright": {
+      "start": "©",
+      "end": "Garage35. All rights reserved."
+    }
+  }
+}

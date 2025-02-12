@@ -2,12 +2,12 @@ import { Hero, Stats, WhyChooseUs, CarListings, Brands, Testimonials, CallToActi
 
 const HomeContent = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-gray-50">
       <Hero />
       <CarListings />
-      <Stats />
-      <WhyChooseUs />
       <Brands />
+      <WhyChooseUs />
+      <Stats />
       <Testimonials />
       <CallToAction />
     </div>

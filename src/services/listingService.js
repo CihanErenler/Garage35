@@ -1,6 +1,7 @@
 import api from '../services/axios';
 
-export const listingService = {
+
+ const listingService = {
   async getListings(params) {
     try {
       const response = await api.get('/storage/list', { params });
@@ -21,3 +22,5 @@ export const listingService = {
     }
   }
 };
+
+export default listingService;

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { listingService } from "../Services/ListingService";
+import listingService from "../services/listingService";
 import PropTypes from "prop-types";
 
 const ListingContext = createContext();

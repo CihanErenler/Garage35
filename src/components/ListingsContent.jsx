@@ -1,6 +1,8 @@
 import useTranslation from '../hooks/useTranslation';
 import PageHero from './common/PageHero';
 import CarCard from './common/CarCard';
+import SearchCars from './Home/SearchCars';
+import SortingOptions from './Listings/SortingOptions';
 import hero from '../assets/hero.jpg';
 
 const ListingsContent = () => {
@@ -121,17 +123,27 @@ const ListingsContent = () => {
         image={hero}
       />
 
-      <div className="py-12 relative">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {cars.map((car) => (
-              <CarCard 
-                key={car.id} 
-                car={car}
-                showFeatures={true}
-                showFeaturedTag={false}
-              />
-            ))}
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row gap-6 py-8">
+          {/* Left sidebar with search options */}
+          <div className="w-full md:w-[300px] shrink-0 md:sticky md:top-4 md:h-[calc(100vh-2rem)]">
+            <SearchCars bgColor="bg-white" layout="sidebar" />
+          </div>
+
+          {/* Main content */}
+          <div className="flex-1">
+            <SortingOptions />
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+              {cars.map((car) => (
+                <CarCard 
+                  key={car.id} 
+                  car={car}
+                  showFeatures={true}
+                  showFeaturedTag={false}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

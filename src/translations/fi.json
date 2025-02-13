@@ -104,6 +104,33 @@
       "description": "Selaa valikoimaamme tai ota yhteyttä",
       "primary": "Katso valikoima",
       "secondary": "Ota yhteyttä"
+    },
+    "buyCars": {
+      "title": "Ostamme autoja",
+      "description": "Ostamme jatkuvasti hyväkuntoisia ja alle 150 000 km ajettuja autoja! Hoidamme puolestasi auton myyntiin liittyvät paperityöt.",
+      "cta": "Pyydä tarjous"
+    },
+    "financing": {
+      "title": "Liisaus on vaihtoehto auton omistamiselle",
+      "description": "Järvi Yksityisleasingin avulla pääset uuden tai vaihtoauton rattiin kiinteällä kuukausihinnalla ilman käsirahaa. Yksinkertaista, vaivatonta ja ennakoitavaa!",
+      "cta": "Lue lisää"
+    },
+    "search": {
+      "title": "Hae vaihtoautoja",
+      "make": "Merkki",
+      "quid": "Malli",
+      "selected": "valittu",
+      "modelYear": "Vuosimalli",
+      "price": "Hinta",
+      "engineType": "Moottori",
+      "gearing": "Vaihteisto",
+      "automatic": "Automaatti",
+      "manual": "Manuaali",
+      "clearSelections": "Tyhjennä valinnat",
+      "advancedSearch": "AVAA TARKEMPI HAKU",
+      "showVehicles": "NÄYTÄ {{count}} AJONEUVOA",
+      "semiautomatic": "Puoliautomaatti",
+      "cvt": "CVT"
     }
   },
   "about": {
@@ -134,8 +161,8 @@
     },
     "contact": {
       "title": "Vieraile näyttelytilassamme",
-      "description": "Koe valikoimamme paikan päällä",
-      "cta": "Ota yhteyttä"
+      "description": "Vieraile näyttelytiloihimme tutustuaksesi premium-autovalikoimaamme ja tavataksesi asiantuntijatiimimme",
+      "callNow": "Soita nyt"
     },
     "findUs": {
       "title": "Löydä meidät",
@@ -146,6 +173,14 @@
     "hero": {
       "title": "Autovalikoimamme",
       "subtitle": "Tutustu premium-autovalikoimaamme"
+    },
+    "sort": {
+      "showing": "Näytetään {{count}} ajoneuvoa",
+      "newest": "Uusimmat ensin",
+      "priceAsc": "Hinta: Halvin ensin",
+      "priceDesc": "Hinta: Kallein ensin",
+      "mileage": "Kilometrit",
+      "year": "Vuosimalli"
     },
     "car": {
       "specs": {

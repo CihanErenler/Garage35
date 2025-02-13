@@ -2,9 +2,25 @@ import useTranslation from '../../hooks/useTranslation';
 import Map from '../common/Map';
 import PageHero  from "../common/PageHero";
 import hero from "../../assets/hero.jpg";
+import { FaPhone, FaClock, FaMapMarkerAlt } from 'react-icons/fa';
 
 const AboutContent = () => {
   const { t } = useTranslation();
+
+  const locations = [
+    {
+      id: 1,
+      name: "Tampere Central",
+      address: "Hatanpään valtatie 34",
+      postal: "33100 Tampere",
+      phone: "+358 123 456 789",
+      hours: {
+        weekdays: "9:00 - 18:00",
+        saturday: "10:00 - 16:00",
+        sunday: "Closed"
+      }
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -45,16 +61,58 @@ const AboutContent = () => {
 
     <section className="bg-gray-50 py-20">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">
             {t('about.contact.title')}
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-gray-600 mb-12 text-center">
             {t('about.contact.description')}
           </p>
-          <button className="bg-red-500 text-white px-8 py-3 rounded-lg hover:bg-red-600 transition-colors">
-            {t('about.contact.cta')}
-          </button>
+
+          {locations.map(location => (
+            <div key={location.id} className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-4">{location.name}</h3>
+              
+              <div className="space-y-4">
+                {/* Address */}
+                <div className="flex items-start gap-3">
+                  <FaMapMarkerAlt className="text-red-500 mt-1" />
+                  <div>
+                    <p className="text-gray-700">{location.address}</p>
+                    <p className="text-gray-700">{location.postal}</p>
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-center gap-3">
+                  <FaPhone className="text-red-500" />
+                  <a 
+                    href={`tel:${location.phone}`}
+                    className="text-gray-700 hover:text-red-500 transition-colors"
+                  >
+                    {location.phone}
+                  </a>
+                </div>
+
+                {/* Hours */}
+                <div className="flex items-start gap-3">
+                  <FaClock className="text-red-500 mt-1" />
+                  <div className="text-gray-700">
+                    <p>Mon-Fri: {location.hours.weekdays}</p>
+                    <p>Sat: {location.hours.saturday}</p>
+                    <p>Sun: {location.hours.sunday}</p>
+                  </div>
+                </div>
+              </div>
+
+              <button 
+                className="w-full mt-6 bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition-colors"
+                onClick={() => window.location.href = `tel:${location.phone}`}
+              >
+                {t('about.contact.callNow')}
+              </button>
+            </div>
+          ))}
         </div>
       </div>
     </section>

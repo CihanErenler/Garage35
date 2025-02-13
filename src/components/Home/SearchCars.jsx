@@ -6,9 +6,9 @@ import { BiDollar } from 'react-icons/bi';
 import RangeSlider from '../common/RangeSlider';
 import DropdownCard from '../common/DropdownCard';
 import CheckboxGroup from '../common/CheckboxGroup';
+import PropTypes from 'prop-types';
 
-
-const SearchCars = ({ bgColor = "bg-gray-900", layout = "default" }) => {
+const SearchCars = ({ bgColor = "bg-gray-950", layout = "default" }) => {
   const { t } = useTranslation();
   const isLightBg = bgColor.includes('white');
   const [priceRange, setPriceRange] = useState([2000, 200000]);
@@ -243,6 +243,11 @@ const SearchCars = ({ bgColor = "bg-gray-900", layout = "default" }) => {
       </div>
     </section>
   );
+};
+
+SearchCars.propTypes = {
+  bgColor: PropTypes.string,
+  layout: PropTypes.string
 };
 
 export default SearchCars; 

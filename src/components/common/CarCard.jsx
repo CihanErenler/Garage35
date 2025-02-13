@@ -1,5 +1,6 @@
 import { FaUsers, FaCarSide, FaCog, FaTachometerAlt, FaSnowflake } from 'react-icons/fa';
 import useTranslation from '../../hooks/useTranslation';
+import PropTypes from 'prop-types';
 
 const CarCard = ({ 
   car, 
@@ -9,10 +10,10 @@ const CarCard = ({
   const { t } = useTranslation();
 
   return (
-    <div className="bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300">
+    <div className="bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
       <div className="relative">
         {showFeaturedTag && (
-          <div className="absolute top-0 left-0 bg-red-500 text-white px-4 py-2 text-sm font-bold skew-x-[-15deg] transform -translate-x-2">
+          <div className="absolute top-0 left-0 bg-red-500 text-white px-4 py-2 text-sm font-bold skew-x-[-10deg] transform -translate-x-2">
             {t('home.featured.featured')}
           </div>
         )}
@@ -74,13 +75,19 @@ const CarCard = ({
           <div className="mb-4 sm:mb-0">
             <div className="text-2xl font-bold text-gray-900">${car.price}</div>
           </div>
-          <button className="w-full sm:w-auto px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+          <button className="w-full sm:w-auto px-6 py-2 bg-gray-950 text-white rounded-lg hover:bg-red-600 transition-colors">
             {t('listings.car.cta')}
           </button>
         </div>
       </div>
     </div>
   );
+};
+
+CarCard.propTypes = {
+  car: PropTypes.object.isRequired,
+  showFeatures: PropTypes.bool,
+  showFeaturedTag: PropTypes.bool
 };
 
 export default CarCard; 

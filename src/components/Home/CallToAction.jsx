@@ -5,7 +5,7 @@ const CallToAction = () => {
   const { t } = useTranslation();
   
   return (
-    <section className="py-24 bg-gray-900 relative overflow-hidden">
+    <section className="py-24 bg-gray-950 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-10" />
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center">

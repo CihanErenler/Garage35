@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="relative min-h-[60vh] md:min-h-[80vh] flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 to-gray-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 to-gray-950/50" />
         <img
           src={heroImage}
           alt="Luxury Car"

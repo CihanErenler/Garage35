@@ -1,11 +1,11 @@
-
+import PropTypes from 'prop-types';
 
 const PageHero = ({ title, subtitle, image }) => {
   return (
     <div className="relative min-h-[40vh] flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 to-gray-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 to-gray-950/70" />
         <img
           src={image}
           alt="Luxury Car Showroom"
@@ -32,6 +32,12 @@ const PageHero = ({ title, subtitle, image }) => {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10" />
     </div>
   );
+};
+
+PageHero.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 };
 
 export default PageHero; 

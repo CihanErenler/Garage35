@@ -104,6 +104,33 @@
       "description": "Browse our collection or contact us for assistance",
       "primary": "View Inventory",
       "secondary": "Contact Us"
+    },
+    "buyCars": {
+      "title": "We Buy Cars",
+      "description": "We continuously buy well-maintained cars with under 150,000 km mileage! We handle all paperwork related to selling your car.",
+      "cta": "Get an Offer"
+    },
+    "financing": {
+      "title": "Leasing is an alternative to car ownership",
+      "description": "With Järvi Private Leasing, you can get a new or used car at a fixed monthly cost without a down payment. Simple, hassle-free, and predictable!",
+      "cta": "Learn More"
+    },
+    "search": {
+      "title": "Search for trade-in cars",
+      "make": "Make",
+      "quid": "Quid",
+      "selected": "selected",
+      "modelYear": "Model year",
+      "price": "Price",
+      "engineType": "Engine type",
+      "gearing": "Gearing",
+      "automatic": "Automatic",
+      "manual": "Manual",
+      "clearSelections": "Clear selections",
+      "advancedSearch": "OPEN ADVANCED SEARCH",
+      "showVehicles": "SHOW {{count}} VEHICLES",
+      "semiautomatic": "Semi-automatic",
+      "cvt": "CVT"
     }
   },
   "about": {
@@ -134,8 +161,8 @@
     },
     "contact": {
       "title": "Visit Our Showroom",
-      "description": "Experience our collection in person",
-      "cta": "Contact Us"
+      "description": "Visit our showrooms to explore our premium vehicle collection and meet our expert team",
+      "callNow": "Call Now"
     },
     "findUs": {
       "title": "Find Us",
@@ -146,6 +173,14 @@
     "hero": {
       "title": "Our Vehicle Collection",
       "subtitle": "Explore our premium selection of vehicles"
+    },
+    "sort": {
+      "showing": "Showing {{count}} vehicles",
+      "newest": "Newest first",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "mileage": "Mileage",
+      "year": "Year"
     },
     "car": {
       "specs": {

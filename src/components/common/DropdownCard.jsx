@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaChevronDown } from 'react-icons/fa';
-import useClickOutside from '../../hooks/useClickOutside';
 
 const DropdownCard = ({ 
   isOpen, 

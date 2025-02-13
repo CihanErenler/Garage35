@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Slider } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const StyledSlider = styled(Slider)(({ theme }) => ({
+const StyledSlider = styled(Slider)(() => ({
   color: '#ef4444',
   height: 3,
   padding: '13px 0',

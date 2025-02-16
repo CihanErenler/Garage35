@@ -1,0 +1,73 @@
+{
+  "home": {
+    "hero": {
+      "welcome": "Welcome to Garage35",
+      "title": "Find Your Perfect Car",
+      "subtitle": "Browse through our extensive collection of premium vehicles",
+      "cta": "View All Cars"
+    },
+    "featured": {
+      "title": "Featured Cars",
+      "subtitle": "Discover our latest and most exclusive vehicles",
+      "viewAll": "View All Cars",
+      "featured": "Featured"
+    },
+    "search": {
+      "title": "Find Your Dream Car",
+      "make": "Make",
+      "quid": "Model",
+      "modelYear": "Model Year",
+      "price": "Price",
+      "engineType": "Engine Type",
+      "gearing": "Transmission",
+      "clearSelections": "Clear selections",
+      "selected": "selected"
+    }
+  },
+  "listings": {
+    "car": {
+      "notFound": "Car not found",
+      "features": "Features",
+      "description": "Description",
+      "financing": "From",
+      "month": "month",
+      "updated": "Updated",
+      "seller": {
+        "title": "Seller",
+        "memberSince": "Car dealer member for",
+        "years": "years",
+        "sendMessage": "Send message",
+        "showNumber": "Show number"
+      },
+      "specs": {
+        "year": "Year",
+        "mileage": "Mileage",
+        "fuelType": "Fuel type",
+        "transmission": "Transmission",
+        "power": "Power",
+        "topSpeed": "Top speed",
+        "fuelTypes": {
+          "petrol": "Petrol",
+          "diesel": "Diesel",
+          "electric": "Electric",
+          "hybrid": "Hybrid",
+          "unknown": "N/A"
+        },
+        "drive": "Drive",
+        "consumption": "Consumption",
+        "deliveryFee": "Delivery fee",
+        "transmissionTypes": {
+          "manual": "Manual",
+          "automatic": "Automatic",
+          "cvt": "CVT",
+          "semiautomatic": "Semi-automatic"
+        },
+        "gearingTypes": {
+          "etuveto": "Front Wheel Drive",
+          "takaveto": "Rear Wheel Drive",
+          "neliveto": "All Wheel Drive"
+        }
+      }
+    }
+  }
+}

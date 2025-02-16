@@ -1,11 +1,11 @@
-import ListingsContent from "../../components/ListingsContent";  
+import ListingsContent from "../../components/ListingsContent";
 
 const ListingsPage = () => {
   return (
     <div>
-      <ListingsContent   />
+      <ListingsContent />
     </div>
   );
 };
 
-export default ListingsPage; 
+export default ListingsPage;

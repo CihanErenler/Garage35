@@ -1,10 +1,11 @@
-import { useState, useRef } from 'react';
-import { FaGlobe, FaChevronDown } from 'react-icons/fa';
-import useLanguage from '../../hooks/useLanguage';
-import useClickOutside from '../../hooks/useClickOutside';
-import { GB, FI } from 'country-flag-icons/react/3x2';
+import { useState, useRef } from "react";
+import { FaGlobe, FaChevronDown } from "react-icons/fa";
+import useLanguage from "../../hooks/useLanguage";
+import useClickOutside from "../../hooks/useClickOutside";
+import { GB, FI, TR } from "country-flag-icons/react/3x2";
+import PropTypes from "prop-types";
 
-const LanguageSelector = () => {
+const LanguageSelector = ({ theme = "dark" }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const { currentLanguage, changeLanguage, languages } = useLanguage();
@@ -13,40 +14,48 @@ const LanguageSelector = () => {
 
   const getFlagComponent = (code) => {
     switch (code) {
-      case 'en':
-        return <GB className="w-5 h-3" />;
-      case 'fi':
-        return <FI className="w-5 h-3" />;
+      case "en":
+        return <GB className="h-3 w-5" />;
+      case "fi":
+        return <FI className="h-3 w-5" />;
+      case "tr":
+        return <TR className="h-3 w-5" />;
       default:
         return null;
     }
   };
 
-  const currentLang = languages.find(lang => lang.code === currentLanguage);
+  const currentLang = languages.find((lang) => lang.code === currentLanguage);
+
+  const buttonClasses =
+    theme === "dark"
+      ? "flex w-[120px] cursor-pointer items-center justify-between gap-2 rounded-full bg-gray-800 px-4 py-2 text-white transition-colors hover:bg-gray-700"
+      : "flex w-[120px] cursor-pointer items-center justify-between gap-2 rounded-full bg-gray-100 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-200";
+
+  const iconClasses = theme === "dark" ? "text-gray-400" : "text-gray-500";
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="cursor-pointer flex items-center justify-between gap-2 text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors py-2 px-4 rounded-full w-[120px]"
-      >
+      <button onClick={() => setIsOpen(!isOpen)} className={buttonClasses}>
         <div className="flex items-center gap-2">
-          <FaGlobe size={16} className="text-gray-500" />
-          <span className="text-sm font-medium min-w-[40px]">{currentLang.label}</span>
+          <FaGlobe size={16} className={iconClasses} />
+          <span className="min-w-[40px] text-sm font-medium">
+            {currentLang.label}
+          </span>
         </div>
-        <FaChevronDown 
-          size={12} 
-          className={`text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
+        <FaChevronDown
+          size={12}
+          className={`${iconClasses} transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
         />
       </button>
 
       {isOpen && (
         <>
-          <div 
+          <div
             className="fixed inset-0 z-10"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute right-0 mt-2 w-[120px] bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-20">
+          <div className="absolute left-0 z-20 mt-2 w-[120px] rounded-lg border border-gray-100 bg-white py-1 shadow-lg">
             {languages.map((language) => (
               <button
                 key={language.code}
@@ -54,8 +63,7 @@ const LanguageSelector = () => {
                   changeLanguage(language.code);
                   setIsOpen(false);
                 }}
-                className={`cursor-pointer w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-colors flex items-center gap-2
-                  ${currentLanguage === language.code ? 'text-red-500 font-medium bg-red-50' : 'text-gray-700'}`}
+                className={`flex w-full cursor-pointer items-center gap-2 px-4 py-2 text-left text-sm transition-colors hover:bg-gray-50 ${currentLanguage === language.code ? "bg-red-50 font-medium text-red-500" : "text-gray-700"}`}
               >
                 {getFlagComponent(language.code)}
                 <span>{language.label}</span>
@@ -68,4 +76,8 @@ const LanguageSelector = () => {
   );
 };
 
-export default LanguageSelector; 
+LanguageSelector.propTypes = {
+  theme: PropTypes.oneOf(["dark", "light"]),
+};
+
+export default LanguageSelector;

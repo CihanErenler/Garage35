@@ -1,10 +1,11 @@
-import useLanguage from './useLanguage';
-import en from '../translations/en.json';
-import fi from '../translations/fi.json';
-
+import useLanguage from "./useLanguage";
+import en from "../translations/en.json";
+import fi from "../translations/fi.json";
+import tr from "../translations/tr.json";
 const translations = {
   en,
-  fi
+  fi,
+  tr,
 };
 
 const useTranslation = () => {
@@ -12,7 +13,7 @@ const useTranslation = () => {
 
   const t = (key) => {
     // Split the key by dots to access nested properties
-    const keys = key.split('.');
+    const keys = key.split(".");
     let translation = translations[currentLanguage];
 
     // Traverse the nested object
@@ -31,4 +32,4 @@ const useTranslation = () => {
   return { t };
 };
 
-export default useTranslation; 
+export default useTranslation;

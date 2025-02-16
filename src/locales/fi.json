@@ -1,0 +1,59 @@
+{
+  "home": {
+    "hero": {
+      "welcome": "Tervetuloa Garage35",
+      "title": "Löydä Täydellinen Auto",
+      "subtitle": "Selaa laajaa valikoimaamme premium-ajoneuvoja",
+      "cta": "Katso Kaikki Autot"
+    },
+    "featured": {
+      "title": "Esittelyssä",
+      "subtitle": "Tutustu uusimpiin ja eksklusiivisimpiin ajoneuvoihimme",
+      "viewAll": "Katso Kaikki Autot",
+      "featured": "Esittelyssä"
+    },
+    "search": {
+      "title": "Etsi Unelma-autosi",
+      "make": "Merkki",
+      "quid": "Malli",
+      "modelYear": "Vuosimalli",
+      "price": "Hinta",
+      "engineType": "Moottorityyppi",
+      "gearing": "Vaihteisto",
+      "clearSelections": "Tyhjennä valinnat",
+      "selected": "valittu"
+    }
+  },
+  "listings": {
+    "car": {
+      "notFound": "Autoa ei löytynyt",
+      "features": "Varusteet",
+      "description": "Kuvaus",
+      "financing": "Alkaen",
+      "month": "kk",
+      "updated": "Päivitetty",
+      "seller": {
+        "title": "Myyjä",
+        "memberSince": "Autoliike Jäsenenä",
+        "years": "vuotta",
+        "sendMessage": "Lähetä viesti",
+        "showNumber": "Näytä numero"
+      },
+      "specs": {
+        "year": "Vuosimalli",
+        "mileage": "Mittarilukema",
+        "fuelType": "Polttoaine",
+        "transmission": "Vaihteisto",
+        "power": "Teho",
+        "topSpeed": "Huippunopeus",
+        "fuelTypes": {
+          "petrol": "Bensiini",
+          "diesel": "Diesel",
+          "electric": "Sähkö",
+          "hybrid": "Hybridi",
+          "unknown": "Ei tiedossa"
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "start.proxy": "cd proxy && npm install && npm start",
+    "start": "npm run start.proxy & npm run dev",
     "preview": "vite preview"
   },
   "dependencies": {

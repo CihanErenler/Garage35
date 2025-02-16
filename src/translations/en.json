@@ -122,7 +122,7 @@
       "selected": "selected",
       "modelYear": "Model year",
       "price": "Price",
-      "engineType": "Engine type",
+      "fuelType": "Fuel type",
       "gearing": "Gearing",
       "automatic": "Automatic",
       "manual": "Manual",
@@ -170,6 +170,7 @@
     }
   },
   "listings": {
+    "noVehicles": "No vehicles found",
     "hero": {
       "title": "Our Vehicle Collection",
       "subtitle": "Explore our premium selection of vehicles"
@@ -183,20 +184,62 @@
       "year": "Year"
     },
     "car": {
+      "notFound": "Car not found",
+      "features": "Features",
+      "description": "Description",
+      "financing": "From",
+      "month": "month",
+      "updated": "Updated",
+      "inspection": "Last inspection",
+      "deliveryFee": "Delivery fee",
+      "financingDetails": {
+        "duration": "Finance duration",
+        "months": "months",
+        "downPayment": "Down payment"
+      },
       "specs": {
-        "seats": "Seats",
-        "bags": "Bags",
-        "transmission": "Transmission",
+        "year": "Year",
         "mileage": "Mileage",
-        "ac": "A/C"
-      },
-      "features": {
-        "cancellation": "Free Cancellation",
-        "guarantee": "Price Guarantee",
-        "liability": "Third Party Liability"
-      },
-      "price": {
-        "perDay": "per day"
+        "fuelType": "Fuel type",
+        "transmission": "Transmission",
+        "power": "Power",
+        "topSpeed": "Top speed",
+        "bodyType": "Body type",
+        "doors": "Doors",
+        "weight": "Weight",
+        "drive": "Drive",
+        "takaveto": "Rear Wheel Drive",
+        "etuveto": "Front Wheel Drive",
+        "neliveto": "All Wheel Drive",
+        "consumption": "Consumption",
+        "co2": "CO₂ emissions",
+        "fuelTypes": {
+          "petrol": "Petrol",
+          "diesel": "Diesel",
+          "electric": "Electric",
+          "hybrid": "Hybrid",
+          "unknown": "N/A"
+        },
+        "transmissionTypes": {
+          "manuaalinen": "Manual",
+          "automaattinen": "Automatic",
+          "käsivalintainen": "Manual"
+        },
+        "gearingTypes": {
+          "etuveto": "Front Wheel Drive",
+          "takaveto": "Rear Wheel Drive",
+          "neliveto": "All Wheel Drive"
+        },
+        "bodyTypes": {
+          "farmari": "Estate",
+          "porrasperä": "Sedan",
+          "viistoperä": "Hatchback",
+          "maasturi": "SUV",
+          "avoauto": "Convertible",
+          "coupe": "Coupe",
+          "pakettiauto": "Van",
+          "lava-auto": "Pickup"
+        }
       },
       "cta": "Display on Nettiauto"
     },

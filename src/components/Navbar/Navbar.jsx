@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import useTranslation from '../../hooks/useTranslation';
-import LanguageSelector from './LanguageSelector';
-import logo from '../../assets/logo.png';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import useTranslation from "../../hooks/useTranslation";
+import LanguageSelector from "./LanguageSelector";
+import navList from "./navList";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -16,8 +17,8 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -30,61 +31,46 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 bg-white shadow-sm z-50 transition-all duration-300">
+    <nav className="sticky top-0 z-50 bg-gray-950 shadow-sm transition-all duration-300">
       <div className="container mx-auto px-4">
-        <div className={`flex items-center justify-between transition-all duration-300 ${
-          isScrolled ? 'h-16' : 'h-20'
-        }`}>
+        <div
+          className={`flex items-center justify-between transition-all duration-300 ${
+            isScrolled ? "h-16" : "h-20"
+          }`}
+        >
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="Logo" 
+            <img
+              src={logo}
+              alt="Logo"
               className={`transition-all duration-300 ${
-                isScrolled ? 'h-10' : 'h-12'
+                isScrolled ? "h-10" : "h-12"
               }`}
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/" 
-              className={`font-medium transition-colors ${
-                isActive('/') 
-                  ? 'text-red-500' 
-                  : 'text-gray-700 hover:text-red-500'
-              }`}
-            >
-              {t('nav.home')}
-            </Link>
-            <Link 
-              to="/listing" 
-              className={`font-medium transition-colors ${
-                isActive('/listing') 
-                  ? 'text-red-500' 
-                  : 'text-gray-700 hover:text-red-500'
-              }`}
-            >
-              {t('nav.listing')}
-            </Link>
-            <Link 
-              to="/about" 
-              className={`font-medium transition-colors ${
-                isActive('/about') 
-                  ? 'text-red-500' 
-                  : 'text-gray-700 hover:text-red-500'
-              }`}
-            >
-              {t('nav.about')}
-            </Link>
-            <LanguageSelector />
+          <div className="hidden items-center space-x-8 md:flex">
+            {navList.map((item) => (
+              <Link
+                key={item.id}
+                to={item.path}
+                className={`font-medium transition-colors ${
+                  isActive(item.path)
+                    ? "text-red-500"
+                    : "text-white hover:text-red-500"
+                }`}
+              >
+                {t(item.name)}
+              </Link>
+            ))}
+            <LanguageSelector theme="dark" />
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className={`md:hidden text-gray-700 hover:text-red-500 transition-colors ${
-              isScrolled ? 'scale-90' : 'scale-100'
+          <button
+            className={`text-gray-700 transition-colors hover:text-red-500 md:hidden ${
+              isScrolled ? "scale-90" : "scale-100"
             }`}
             onClick={toggleMenu}
           >
@@ -94,65 +80,45 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Side Menu */}
-      <div 
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden z-50`}
+      <div
+        className={`fixed top-0 right-0 h-full w-64 transform bg-white shadow-lg transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } z-50 md:hidden`}
       >
         <div className="p-6">
-          <div className="flex justify-end mb-8">
-            <button 
-              className="text-gray-700 hover:text-red-500 transition-colors"
+          <div className="mb-8 flex justify-end">
+            <button
+              className="text-white transition-colors hover:text-red-500"
               onClick={toggleMenu}
             >
               <FaTimes size={24} />
             </button>
           </div>
           <div className="flex flex-col space-y-6">
-            <Link 
-              to="/" 
-              className={`font-medium transition-colors ${
-                isActive('/') 
-                  ? 'text-red-500' 
-                  : 'text-gray-700 hover:text-red-500'
-              }`}
-              onClick={toggleMenu}
-            >
-              {t('nav.home')}
-            </Link>
-            <Link 
-              to="/listing" 
-              className={`font-medium transition-colors ${
-                isActive('/listing') 
-                  ? 'text-red-500' 
-                  : 'text-gray-700 hover:text-red-500'
-              }`}
-              onClick={toggleMenu}
-            >
-              {t('nav.listing')}
-            </Link>
-            <Link 
-              to="/about" 
-              className={`font-medium transition-colors ${
-                isActive('/about') 
-                  ? 'text-red-500' 
-                  : 'text-gray-700 hover:text-red-500'
-              }`}
-              onClick={toggleMenu}
-            >
-              {t('nav.about')}
-            </Link>
-            <div className="pt-4">
-              <LanguageSelector />
-            </div>
+            {navList.map((item) => (
+              <Link
+                key={item.id}
+                to={item.path}
+                className={`font-medium transition-colors ${
+                  isActive(item.path)
+                    ? "text-red-500"
+                    : "text-gray-900 hover:text-red-500"
+                }`}
+                onClick={toggleMenu}
+              >
+                {t(item.name)}
+              </Link>
+            ))}
+
+            <LanguageSelector theme="light" />
           </div>
         </div>
       </div>
 
       {/* Overlay */}
       {isOpen && (
-        <div 
-          className="fixed transition-opacity duration-300 inset-0 bg-black opacity-50 md:hidden z-40"
+        <div
+          className="fixed inset-0 z-40 bg-black opacity-50 transition-opacity duration-300 md:hidden"
           onClick={toggleMenu}
         />
       )}
@@ -160,4 +126,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

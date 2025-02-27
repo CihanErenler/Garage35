@@ -5,15 +5,25 @@ import { useListings } from "../../context/listingContext";
 
 const SortingOptions = () => {
   const { t } = useTranslation();
-  const [selectedSort, setSelectedSort] = useState("newest");
+  const { sortListings } = useListings();
+
+  const [selectedSort, setSelectedSort] = useState("price-desc");
   const { searchResultsAmount } = useListings();
+
   const sortOptions = [
     { value: "newest", label: t("listings.sort.newest") },
     { value: "price-asc", label: t("listings.sort.priceAsc") },
     { value: "price-desc", label: t("listings.sort.priceDesc") },
-    { value: "mileage", label: t("listings.sort.mileage") },
-    { value: "year", label: t("listings.sort.year") },
+    { value: "mileage-asc", label: t("listings.sort.mileageAsc") },
+    { value: "mileage-desc", label: t("listings.sort.mileageDesc") },
+    { value: "year-asc", label: t("listings.sort.yearAsc") },
+    { value: "year-desc", label: t("listings.sort.yearDesc") },
   ];
+
+  const handleSortChange = (value) => {
+    setSelectedSort(value);
+    sortListings(value);
+  };
 
   return (
     <div className="border-b border-gray-200 bg-gray-50 py-4">
@@ -29,7 +39,7 @@ const SortingOptions = () => {
             <span className="text-gray-600">Sort by:</span>
             <select
               value={selectedSort}
-              onChange={(e) => setSelectedSort(e.target.value)}
+              onChange={(e) => handleSortChange(e.target.value)}
               className="appearance-none rounded-lg border border-gray-300 bg-white px-4 py-1 pr-8 text-gray-700 focus:border-red-500 focus:outline-none"
             >
               {sortOptions.map((option) => (

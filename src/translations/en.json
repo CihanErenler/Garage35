@@ -180,8 +180,10 @@
       "newest": "Newest first",
       "priceAsc": "Price: Low to High",
       "priceDesc": "Price: High to Low",
-      "mileage": "Mileage",
-      "year": "Year"
+      "mileageAsc": "Mileage: Low to High",
+      "mileageDesc": "Mileage: High to Low",
+      "yearAsc": "Year: Low to High",
+      "yearDesc": "Year: High to Low"
     },
     "car": {
       "notFound": "Car not found",

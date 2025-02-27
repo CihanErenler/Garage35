@@ -149,6 +149,8 @@
     },
     "car": {
       "notFound": "Araç bulunamadı",
+      "basicInfo": "Temel Bilgiler",
+      "technicalInfo": "Teknik Bilgiler",
       "features": "Özellikler",
       "description": "Açıklama",
       "financing": "Başlangıç",
@@ -156,25 +158,32 @@
       "updated": "Güncellendi",
       "inspection": "Son Muayene",
       "deliveryFee": "Teslimat Ücreti",
-
       "financingDetails": {
         "duration": "Finansman Süresi",
         "months": "ay",
         "downPayment": "Peşinat"
       },
       "specs": {
-        "year": "Model Yılı",
+        "make": "Marka",
+        "model": "Model",
         "mileage": "Kilometre",
-        "fuelType": "Yakıt Tipi",
-        "transmission": "Şanzıman",
-        "power": "Güç",
-        "topSpeed": "Maksimum Hız",
         "bodyType": "Kasa Tipi",
-        "doors": "Kapı",
-        "weight": "Ağırlık",
-        "consumption": "Tüketim",
-        "co2": "CO₂ Emisyonu",
+        "registration": "Plaka",
+        "fuelType": "Yakıt Tipi",
+        "transmission": "Vites",
+        "doors": "Kapı Sayısı",
         "drive": "Çekiş",
+        "power": "Güç",
+        "weight": "Ağırlık",
+        "topSpeed": "Maksimum Hız",
+        "consumption": "Yakıt Tüketimi",
+        "co2": "CO2 Emisyonu",
+        "year": "Model Yılı",
+        "transmissionTypes": {
+          "automaattinen": "Otomatik",
+          "manuaalinen": "Manuel",
+          "käsivalintainen": "Manuel"
+        },
         "fuelTypes": {
           "petrol": "Benzin",
           "diesel": "Dizel",
@@ -182,24 +191,19 @@
           "hybrid": "Hibrit",
           "unknown": "Bilinmiyor"
         },
-        "transmissionTypes": {
-          "manuaalin": "Manuel",
-          "automaattinen": "Otomatik"
-        },
         "gearingTypes": {
-          "etuveto": "Önden Çekiş",
-          "takaveto": "Arkadan İtiş",
-          "neliveto": "Dört Çeker"
+          "fwd": "Önden çekiş",
+          "rwd": "Arkadan itiş",
+          "awd": "Dört çeker"
         },
         "bodyTypes": {
-          "farmari": "Station Wagon",
-          "porrasperä": "Sedan",
-          "viistoperä": "Hatchback",
-          "maasturi": "SUV",
-          "avoauto": "Cabrio",
-          "coupe": "Coupe",
-          "pakettiauto": "Van",
-          "lava-auto": "Pickup"
+          "sedan": "Sedan",
+          "hatchback": "Hatchback",
+          "estate": "Station Wagon",
+          "suv": "SUV",
+          "coupe": "Coupé",
+          "convertible": "Cabrio",
+          "van": "Van"
         }
       },
       "cta": "Nettiauto'da Göster"

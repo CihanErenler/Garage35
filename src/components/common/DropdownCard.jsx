@@ -53,8 +53,8 @@ const DropdownCard = ({
         disabled={disabled}
       >
         <div className="flex items-center gap-2">
-          <Icon className="text-lg text-gray-400" />
-          <span className="text-gray-500">{label}</span>
+          <Icon className="text-lg text-gray-400 text-red-500" />
+          <span className="text-gray-700">{label}</span>
         </div>
         <FaChevronDown
           className={`text-gray-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}

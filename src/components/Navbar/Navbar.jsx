@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import useTranslation from "../../hooks/useTranslation";
 import LanguageSelector from "./LanguageSelector";
 import navList from "./navList";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/garage35.svg";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -44,7 +44,7 @@ const Navbar = () => {
               src={logo}
               alt="Logo"
               className={`transition-all duration-300 ${
-                isScrolled ? "h-10" : "h-12"
+                isScrolled ? "h-8" : "h-10"
               }`}
             />
           </Link>

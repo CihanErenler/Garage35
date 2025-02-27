@@ -16,7 +16,7 @@ app.use(
   }),
 );
 
-app.get("/api/storage/list", async (req, res) => {
+app.get("/api/storage/search", async (req, res) => {
   try {
     const response = await fetch(
       `${process.env.API_BASE_URL}/storage/search?image_width=300&sort=price|desc`,
@@ -34,27 +34,9 @@ app.get("/api/storage/list", async (req, res) => {
   }
 });
 
-app.get("/api/storage/latest", async (req, res) => {
+app.get("/api/storage/vehicle", async (req, res) => {
   try {
-    const response = await fetch(
-      `${process.env.API_BASE_URL}/storage/search?image_width=300&sort=price|desc`,
-      {
-        headers: {
-          APPID: process.env.API_KEY,
-        },
-      },
-    );
-    const data = await response.json();
-    res.json(data);
-  } catch (error) {
-    console.error("Proxy error:", error);
-    res.status(500).json({ error: "Proxy error" });
-  }
-});
-
-app.get("/api/storage/vehicle/:registration/:vehicleType", async (req, res) => {
-  try {
-    const { registration, vehicleType } = req.params;
+    const { registration, vehicleType } = req.query;
     const response = await fetch(
       `${process.env.API_BASE_URL}/storage/vehicle?registration=${registration}&vehicle_type=${vehicleType}`,
       {

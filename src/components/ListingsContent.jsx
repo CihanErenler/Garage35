@@ -3,16 +3,17 @@ import PageHero from "./common/PageHero";
 import SearchCars from "./Home/SearchCars";
 import SortingOptions from "./Listings/SortingOptions";
 import hero from "../assets/hero.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useListings } from "../context/listingContext";
 import FeaturedCarCard from "./common/FeaturedCarCard";
 import Pagination from "./common/Pagination";
+import { FaCar } from "react-icons/fa";
 
 const ListingsContent = () => {
-  const { t } = useTranslation();
-  const { fetchAllListings, isLoadingAllListings, listings } = useListings();
-  const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const { t } = useTranslation();
+  const { isLoading, listings, copiedListings } = useListings();
   const itemsPerPage = 6;
 
   const totalPages = Math.ceil(listings.length / itemsPerPage);
@@ -25,45 +26,10 @@ const ListingsContent = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    const fetchListings = async () => {
-      try {
-        const response = await fetchAllListings();
-        if (response?.vehicles) {
-          setError(null);
-        } else {
-          setError("No vehicles found");
-        }
-      } catch (err) {
-        setError(err.message);
-      }
-    };
-
-    if (listings.length === 0) {
-      fetchListings();
-    }
-  }, []);
-
-  if (isLoadingAllListings) {
+  if (isLoading.all) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="h-12 w-12 animate-spin rounded-full border-t-2 border-b-2 border-red-500" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-xl text-red-500">{error}</p>
-      </div>
-    );
-  }
-
-  if (listings.length === 0) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-xl text-gray-600">{t("listings.noVehicles")}</p>
+      <div className="flex min-h-[200px] items-center justify-center">
+        <div className="h-12 w-12 animate-spin rounded-full border-t-2 border-b-2 border-gray-900"></div>
       </div>
     );
   }
@@ -87,14 +53,20 @@ const ListingsContent = () => {
           <div className="flex-1">
             <SortingOptions />
 
-            <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-              {currentItems.map((car) => (
-                <FeaturedCarCard
-                  key={car.nettix_id}
-                  car={car}
-                  featured={false}
-                />
-              ))}
+            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {currentItems.length > 0 ? (
+                currentItems.map((car) => (
+                  <FeaturedCarCard
+                    key={car.nettix_id}
+                    car={car}
+                    featured={false}
+                  />
+                ))
+              ) : (
+                <p className="col-span-full mt-10 flex flex-col items-center gap-4 text-center text-xl text-gray-500">
+                  {t("listings.noVehicles")}
+                </p>
+              )}
             </div>
 
             {totalPages > 1 && (

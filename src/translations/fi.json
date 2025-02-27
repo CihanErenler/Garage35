@@ -184,6 +184,8 @@
     },
     "car": {
       "notFound": "Autoa ei löytynyt",
+      "basicInfo": "Perustiedot",
+      "technicalInfo": "Tekniset tiedot",
       "features": "Varusteet",
       "description": "Kuvaus",
       "financing": "Alkaen",
@@ -191,7 +193,6 @@
       "updated": "Päivitetty",
       "inspection": "Viimeisin katsastus",
       "deliveryFee": "Toimituskulut",
-
       "financingDetails": {
         "duration": "Rahoitusaika",
         "months": "kuukautta",
@@ -199,17 +200,24 @@
       },
       "specs": {
         "year": "Vuosimalli",
-        "mileage": "Mittarilukema",
-        "fuelType": "Polttoaine",
-        "transmission": "Vaihteisto",
-        "power": "Teho",
-        "topSpeed": "Huippunopeus",
+        "model": "Malli",
+        "mileage": "Kilometrit",
         "bodyType": "Korimalli",
-        "doors": "Ovet",
-        "weight": "Omamassa",
-        "consumption": "Kulutus",
-        "co2": "CO₂-päästöt",
+        "registration": "Rekisterinumero",
+        "fuelType": "Käyttövoima",
+        "transmission": "Vaihteisto",
+        "doors": "Ovien lukumäärä",
         "drive": "Vetotapa",
+        "power": "Teho",
+        "weight": "Omamassa",
+        "topSpeed": "Huippunopeus",
+        "consumption": "Kulutus",
+        "co2": "CO2-päästöt",
+        "transmissionTypes": {
+          "automaattinen": "Automaatti",
+          "manuaalinen": "Manuaali",
+          "käsivalintainen": "Manuaali"
+        },
         "fuelTypes": {
           "petrol": "Bensiini",
           "diesel": "Diesel",
@@ -217,24 +225,19 @@
           "hybrid": "Hybridi",
           "unknown": "Ei tiedossa"
         },
-        "transmissionTypes": {
-          "manuaalin": "Manuaalinen",
-          "automaattinen": "Automaattinen"
-        },
         "gearingTypes": {
-          "etuveto": "Etuveto",
-          "takaveto": "Takaveto",
-          "neliveto": "Neliveto"
+          "fwd": "Etuveto",
+          "rwd": "Takaveto",
+          "awd": "Neliveto"
         },
         "bodyTypes": {
-          "farmari": "Farmari",
-          "porrasperä": "Porrasperä",
-          "viistoperä": "Viistoperä",
-          "maasturi": "Maasturi",
-          "avoauto": "Avoauto",
-          "coupe": "Coupe",
-          "pakettiauto": "Pakettiauto",
-          "lava-auto": "Lava-auto"
+          "sedan": "Sedan",
+          "hatchback": "Viistoperä",
+          "estate": "Farmari",
+          "suv": "Maasturi",
+          "coupe": "Coupé",
+          "convertible": "Avoauto",
+          "van": "Pakettiauto"
         }
       },
       "cta": "Näytä Nettiautossa"

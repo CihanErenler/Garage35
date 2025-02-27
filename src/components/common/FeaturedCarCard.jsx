@@ -4,7 +4,6 @@ import {
   FaTachometerAlt,
   FaEuroSign,
   FaGasPump,
-  FaCog,
   FaCalendarAlt,
 } from "react-icons/fa";
 import useTranslation from "../../hooks/useTranslation";
@@ -49,33 +48,29 @@ const FeaturedCarCard = ({ car, featured = true }) => {
 
         <div className="flex h-[150px] flex-col p-6">
           <div>
-            <div className="mb-1 flex gap-2 text-xl font-black text-gray-900">
+            <div className="mb-1 flex gap-2 text-lg font-black text-gray-900">
               <span>{car.make}</span>
               <span>{car.model}</span>
             </div>
-            <div className="mb-2 flex flex-wrap gap-2">
+            <div className="mb-2 flex flex-wrap gap-2 text-sm">
               <div className="flex items-center gap-1 text-gray-600">
                 <FaCalendarAlt className="text-red-500" />
-                <span className="font-medium">{car.year}</span>
+                <span>{car.year}</span>
               </div>
               <div className="flex items-center gap-1 text-gray-600">
                 <FaTachometerAlt className="text-red-500" />
-                <span className="font-medium">
-                  {(car.mileage / 1000).toFixed(0)}km
-                </span>
+                <span>{(car.mileage / 1000).toFixed(0)}km</span>
               </div>
               <div className="flex items-center gap-1 text-gray-600">
                 <FaGasPump className="text-red-500" />
-                <span className="font-medium">
-                  {getFuelTypeLabel(car.fuel_type)}
-                </span>
+                <span>{getFuelTypeLabel(car.fuel_type)}</span>
               </div>
-              {car.drive && (
+              {/* {car.drive && (
                 <div className="flex items-center gap-1 text-gray-600">
                   <FaCog className="text-red-500" />
-                  <span className="font-medium">{car.drive}</span>
+                  <span>{car.drive}</span>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
           <div className="flex items-center justify-between pt-2">
@@ -109,10 +104,6 @@ FeaturedCarCard.propTypes = {
     vehicle_type: PropTypes.string.isRequired,
   }).isRequired,
   featured: PropTypes.bool,
-};
-
-FeaturedCarCard.defaultProps = {
-  featured: true,
 };
 
 export default FeaturedCarCard;

@@ -3,11 +3,11 @@ import AppRouter from "./routes/AppRouter";
 import { useListings } from "./context/listingContext";
 
 const App = () => {
-  const { fetchLatestListings, listings } = useListings();
+  const { fetchAllListings, listings } = useListings();
 
   const initialLoad = async () => {
     if (listings.length === 0) {
-      await fetchLatestListings();
+      await fetchAllListings();
     }
   };
 

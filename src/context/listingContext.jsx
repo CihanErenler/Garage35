@@ -1,80 +1,99 @@
-import { createContext, useContext, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  useEffect,
+} from "react";
 import PropTypes from "prop-types";
 import listingApi from "../api/listingApi";
+
 const ListingContext = createContext();
 
 export const ListingProvider = ({ children }) => {
   const [listings, setListings] = useState([]);
+  const [copiedListings, setCopiedListings] = useState([]);
   const [latestListings, setLatestListings] = useState([]);
-  const [isLoadingAllListings, setIsLoadingAllListings] = useState(false);
-  const [isLoadingLatestListings, setIsLoadingLatestListings] = useState(false);
+  const [isLoading, setIsLoading] = useState({ all: false, latest: false });
   const [searchResultsAmount, setSearchResultsAmount] = useState(0);
-  const [searchOptions, setSearchOptions] = useState({});
   const [error, setError] = useState(null);
 
-  const reduceSearchOptions = (searchOptions) => {
-    const reducedOptions = searchOptions.reduce((acc, curr) => {
-      if (!acc.make) {
-        acc.make = {};
-      }
+  // Search options
+  const [filters, setFilters] = useState({
+    make: [],
+    model: [],
+    fuelType: [],
+    gearing: [],
+    priceRange: [0, 0],
+    yearRange: [0, 0],
+    maxPrice: 0,
+    minPrice: 0,
+    maxYear: 0,
+    minYear: 0,
+    selectedMakes: [],
+    selectedQuids: [],
+    selectedFuelType: [],
+    selectedGearing: [],
+    selectedPriceRange: [0, 0],
+    selectedYearRange: [0, 0],
+  });
 
-      if (!acc.fuelType) {
-        acc.fuelType = [];
-      }
-
-      if (!acc.gearing) {
-        acc.gearing = [];
-      }
-
-      if (!acc.make[curr.make]) {
-        acc.make[curr.make] = [];
-      }
-
-      acc.make[curr.make].push(curr.model);
-
-      if (!acc.fuelType.includes(curr.fuel_type)) {
-        acc.fuelType.push(curr.fuel_type);
-      }
-
-      if (!acc.gearing.includes(curr.transmission_type)) {
-        acc.gearing.push(curr.transmission_type);
-      }
-
-      return acc;
-    }, {});
-    console.log("reducedOptions", reducedOptions);
-    setSearchOptions(reducedOptions);
+  const setSelectedOptions = (options) => {
+    setFilters((prev) => ({
+      ...prev,
+      make: options.make,
+      model: Array.from(options.model),
+      fuelType: Array.from(options.fuelType),
+      gearing: Array.from(options.gearing),
+      maxPrice: Math.max(...options.prices),
+      minPrice: Math.min(...options.prices),
+      maxYear: Math.max(...options.years),
+      minYear: Math.min(...options.years),
+      priceRange: [Math.min(...options.prices), Math.max(...options.prices)],
+      yearRange: [Math.min(...options.years), Math.max(...options.years)],
+    }));
   };
 
-  const fetchAllListings = async () => {
-    try {
-      setIsLoadingAllListings(true);
-      setError(null);
-      const response = await listingApi.getListings();
-      setListings(response.data.vehicles);
-      return response.data;
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoadingAllListings(false);
-    }
+  const reduceSearchOptions = (vehicles) => {
+    return vehicles.reduce(
+      (acc, { make, model, fuel_type, transmission_type, price, year }) => {
+        acc.make[make] = acc.make[make] || [];
+        acc.make[make].push(model);
+        acc.model.add(model);
+        acc.fuelType.add(fuel_type);
+        acc.gearing.add(transmission_type);
+        acc.prices.push(price);
+        acc.years.push(year);
+        return acc;
+      },
+      {
+        make: {},
+        model: new Set(),
+        fuelType: new Set(),
+        gearing: new Set(),
+        prices: [],
+        years: [],
+      },
+    );
   };
 
-  const fetchLatestListings = async () => {
+  const fetchAllListings = useCallback(async () => {
     try {
-      setIsLoadingLatestListings(true);
+      setIsLoading((prev) => ({ ...prev, all: true }));
       setError(null);
-      const response = await listingApi.getLatestListing();
-      reduceSearchOptions(response.data.vehicles);
-      const featuredListings = response.data.vehicles.splice(0, 6);
+      const response = await listingApi.getAllListings();
+      const vehicles = response.data.vehicles;
+      setListings([...vehicles]);
+      setCopiedListings([...vehicles]);
       setSearchResultsAmount(response.data.vehicle_amount);
-      setLatestListings(featuredListings);
+      setLatestListings(vehicles.slice(0, 6));
+      setSelectedOptions(reduceSearchOptions(vehicles));
     } catch (err) {
       setError(err.message);
     } finally {
-      setIsLoadingLatestListings(false);
+      setIsLoading((prev) => ({ ...prev, all: false }));
     }
-  };
+  }, []);
 
   const fetchCarById = async (registration, vehicleType) => {
     try {
@@ -86,26 +105,66 @@ export const ListingProvider = ({ children }) => {
     }
   };
 
+  const filterListings = useCallback(() => {
+    let filtered = [...copiedListings];
+    const {
+      selectedMakes,
+      selectedQuids,
+      selectedFuelType,
+      selectedGearing,
+      selectedPriceRange,
+      selectedYearRange,
+    } = filters;
+
+    if (selectedMakes.length)
+      filtered = filtered.filter(({ make }) => selectedMakes.includes(make));
+    if (selectedQuids.length)
+      filtered = filtered.filter(({ model }) => selectedQuids.includes(model));
+    if (selectedFuelType.length)
+      filtered = filtered.filter(({ fuel_type }) =>
+        selectedFuelType.includes(fuel_type),
+      );
+    if (selectedGearing.length)
+      filtered = filtered.filter(({ transmission_type }) =>
+        selectedGearing.includes(transmission_type),
+      );
+    if (selectedPriceRange[0] > 0 || selectedPriceRange[1] > 0)
+      filtered = filtered.filter(
+        ({ price }) =>
+          price >= selectedPriceRange[0] && price <= selectedPriceRange[1],
+      );
+    if (selectedYearRange[0] > 0 || selectedYearRange[1] > 0)
+      filtered = filtered.filter(
+        ({ year }) =>
+          year >= selectedYearRange[0] && year <= selectedYearRange[1],
+      );
+
+    setListings(filtered);
+    setSearchResultsAmount(filtered.length);
+  }, [copiedListings, filters]);
+
+  const updateFilters = (key, value) => {
+    setFilters((prev) => ({ ...prev, [key]: value }));
+    filterListings();
+  };
+
+  useEffect(() => {
+    filterListings();
+  }, [filters, filterListings]);
+
   return (
     <ListingContext.Provider
       value={{
         listings,
         latestListings,
-        isLoadingAllListings,
-        setIsLoadingAllListings,
-        isLoadingLatestListings,
-        setIsLoadingLatestListings,
+        isLoading,
         searchResultsAmount,
-        setSearchResultsAmount,
         error,
-        setError,
-        setListings,
-        setLatestListings,
         fetchAllListings,
-        fetchLatestListings,
         fetchCarById,
-        searchOptions,
-        setSearchOptions,
+        filters,
+        updateFilters,
+        copiedListings,
       }}
     >
       {children}
@@ -117,7 +176,6 @@ ListingProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useListings = () => {
   const context = useContext(ListingContext);
   if (!context) {

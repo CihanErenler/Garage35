@@ -6,9 +6,7 @@ import { useListings } from "../../context/listingContext";
 
 const CarListings = () => {
   const { t } = useTranslation();
-  const { latestListings, latestListingsLoading } = useListings();
-
-  console.log(latestListings);
+  const { latestListings, isLoadingLatestListings } = useListings();
 
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white py-12">
@@ -19,9 +17,9 @@ const CarListings = () => {
         />
 
         <div className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {latestListingsLoading ? (
-            <div className="flex justify-center">
-              <div className="h-12 w-12 animate-spin rounded-full border-t-2 border-b-2 border-red-500"></div>
+          {isLoadingLatestListings ? (
+            <div className="flex min-h-[200px] items-center justify-center">
+              <div className="h-12 w-12 animate-spin rounded-full border-t-2 border-b-2 border-gray-900"></div>
             </div>
           ) : (
             latestListings.map((car) => (

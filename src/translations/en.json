@@ -116,7 +116,7 @@
       "cta": "Learn More"
     },
     "search": {
-      "title": "Search for your dream car",
+      "title": "Filter cars",
       "make": "Make",
       "quid": "Quid",
       "selected": "selected",
@@ -170,7 +170,7 @@
     }
   },
   "listings": {
-    "noVehicles": "No vehicles found",
+    "noVehicles": "No vehicles found with the selected filters",
     "hero": {
       "title": "Our Vehicle Collection",
       "subtitle": "Explore our premium selection of vehicles"
@@ -185,6 +185,8 @@
     },
     "car": {
       "notFound": "Car not found",
+      "basicInfo": "Basic Information",
+      "technicalInfo": "Technical Information",
       "features": "Features",
       "description": "Description",
       "financing": "From",
@@ -199,46 +201,44 @@
       },
       "specs": {
         "year": "Year",
+        "model": "Model",
         "mileage": "Mileage",
-        "fuelType": "Fuel type",
+        "bodyType": "Body Type",
+        "registration": "Registration",
+        "fuelType": "Fuel Type",
         "transmission": "Transmission",
-        "power": "Power",
-        "topSpeed": "Top speed",
-        "bodyType": "Body type",
         "doors": "Doors",
-        "weight": "Weight",
         "drive": "Drive",
-        "takaveto": "Rear Wheel Drive",
-        "etuveto": "Front Wheel Drive",
-        "neliveto": "All Wheel Drive",
+        "power": "Power",
+        "weight": "Weight",
+        "topSpeed": "Top Speed",
         "consumption": "Consumption",
-        "co2": "CO₂ emissions",
+        "co2": "CO2 Emissions",
+        "transmissionTypes": {
+          "automaattinen": "Automatic",
+          "manuaalinen": "Manual",
+          "käsivalintainen": "Manual"
+        },
         "fuelTypes": {
           "petrol": "Petrol",
           "diesel": "Diesel",
           "electric": "Electric",
           "hybrid": "Hybrid",
-          "unknown": "N/A"
-        },
-        "transmissionTypes": {
-          "manuaalinen": "Manual",
-          "automaattinen": "Automatic",
-          "käsivalintainen": "Manual"
+          "unknown": "Unknown"
         },
         "gearingTypes": {
-          "etuveto": "Front Wheel Drive",
-          "takaveto": "Rear Wheel Drive",
-          "neliveto": "All Wheel Drive"
+          "fwd": "Front-wheel drive",
+          "rwd": "Rear-wheel drive",
+          "awd": "All-wheel drive"
         },
         "bodyTypes": {
-          "farmari": "Estate",
-          "porrasperä": "Sedan",
-          "viistoperä": "Hatchback",
-          "maasturi": "SUV",
-          "avoauto": "Convertible",
-          "coupe": "Coupe",
-          "pakettiauto": "Van",
-          "lava-auto": "Pickup"
+          "sedan": "Sedan",
+          "hatchback": "Hatchback",
+          "estate": "Estate",
+          "suv": "SUV",
+          "coupe": "Coupé",
+          "convertible": "Convertible",
+          "van": "Van"
         }
       },
       "cta": "Display on Nettiauto"

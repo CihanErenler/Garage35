@@ -161,6 +161,20 @@ export const ListingProvider = ({ children }) => {
     setSearchResultsAmount(filtered.length);
   }, [copiedListings, filters]);
 
+  const resetFilters = () => {
+    setFilters({
+      ...filters,
+      selectedMakes: [],
+      selectedQuids: [],
+      selectedFuelType: [],
+      selectedGearing: [],
+      selectedPriceRange: [0, 0],
+      selectedYearRange: [0, 0],
+    });
+    setListings(copiedListings);
+    setSearchResultsAmount(copiedListings.length);
+  };
+
   const updateFilters = (key, value) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
     filterListings();
@@ -184,6 +198,7 @@ export const ListingProvider = ({ children }) => {
         updateFilters,
         copiedListings,
         sortListings,
+        resetFilters,
       }}
     >
       {children}

@@ -11,7 +11,6 @@ const SortingOptions = () => {
   const { searchResultsAmount } = useListings();
 
   const sortOptions = [
-    { value: "newest", label: t("listings.sort.newest") },
     { value: "price-asc", label: t("listings.sort.priceAsc") },
     { value: "price-desc", label: t("listings.sort.priceDesc") },
     { value: "mileage-asc", label: t("listings.sort.mileageAsc") },
@@ -28,7 +27,7 @@ const SortingOptions = () => {
   return (
     <div className="border-b border-gray-200 bg-gray-50 py-4">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-start justify-between gap-2 lg:flex-row lg:items-center">
           <div className="text-lg text-gray-600">
             Filter results:{" "}
             <span className="font-bold">{searchResultsAmount}</span> vehicles

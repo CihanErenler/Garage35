@@ -18,7 +18,7 @@ const AboutContent = () => {
           image={hero}
         />
         <Story />
-        <Values />
+        {/* <Values /> */}
         <VisitOurShowroom />
 
         <section className="bg-white py-16">

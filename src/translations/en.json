@@ -1,221 +1,257 @@
 {
   "nav": {
     "home": "HOME",
-    "listing": "LISTING",
-    "about": "ABOUT"
+    "listing": "CARS",
+    "about": "ABOUT",
+    "maintenance": "SERVICE"
   },
   "home": {
     "hero": {
       "welcome": "Welcome to Garage35",
-      "title": "FIND YOUR PERFECT NEW CAR",
-      "subtitle": "Explore our extensive collection of premium vehicles",
-      "cta": "LEARN MORE",
-      "learnMore": "Learn More",
+      "title": "Looking for a car change? We have the car for your needs!",
+      "subtitle": "Explore our extensive vehicle selection.",
+      "cta": "READ MORE",
+      "learnMore": "Learn more",
       "stats": {
-        "cars": "Cars Available",
-        "experience": "Years Experience",
-        "support": "Support Available"
+        "cars": "Available cars",
+        "experience": "Years of experience",
+        "support": "Support available"
       }
     },
     "featured": {
-      "title": "Featured Cars",
-      "subtitle": "Explore our selection of premium vehicles",
-      "viewDetails": "View Details",
-      "viewAll": "View All Listings",
+      "title": "Featured cars",
+      "subtitle": "Explore selected premium vehicles",
+      "viewDetails": "View details",
+      "viewAll": "View all listings",
       "featured": "FEATURED"
     },
     "whyChooseUs": {
-      "title": "Why Choose Us?",
-      "subtitle": "Experience excellence in automotive services",
+      "title": "Why choose us?",
+      "subtitle": "Experience premium automotive service",
       "features": {
         "expert": {
-          "title": "Expert Guidance",
+          "title": "Expert guidance",
           "description": "Professional advice from our experienced team"
         },
         "trusted": {
-          "title": "Trusted Service",
-          "description": "Building relationships through reliable service"
+          "title": "Trusted service",
+          "description": "We build customer relationships with reliable service"
         },
         "selection": {
-          "title": "Wide Selection",
+          "title": "Wide selection",
           "description": "Extensive range of premium vehicles"
         }
       }
     },
     "stats": {
       "carsAvailable": {
-        "number": "1000+",
-        "label": "Cars Available"
+        "number": "80+",
+        "label": "Available cars"
       },
       "happyCustomers": {
-        "number": "5000+",
-        "label": "Happy Customers"
+        "number": "1000+",
+        "label": "Happy customers"
       },
       "yearsExperience": {
-        "number": "15+",
-        "label": "Years Experience"
+        "number": "10+",
+        "label": "Years of experience"
       },
       "satisfactionRate": {
         "number": "100%",
-        "label": "Satisfaction Rate"
+        "label": "Satisfaction rate"
       }
     },
     "testimonials": {
-      "title": "What Our Customers Say",
-      "subtitle": "Real experiences from our valued clients",
+      "title": "What our customers say",
+      "subtitle": "Real experiences from our customers",
       "first": {
-        "role": "Business Owner",
-        "text": "Excellent service and a fantastic selection of premium vehicles. The team was incredibly helpful in finding the perfect car for my needs."
+        "role": "Entrepreneur",
+        "text": "Excellent service and a wonderful selection of premium vehicles. The team helped me find the perfect car for my needs."
       },
       "second": {
-        "role": "Professional Driver",
-        "text": "The quality of vehicles and customer service is outstanding. They made the entire process smooth and enjoyable."
+        "role": "Professional driver",
+        "text": "The quality of vehicles and customer service are top-notch. The entire purchasing process was smooth and pleasant."
       },
       "third": {
         "role": "Entrepreneur",
-        "text": "Their expertise and attention to detail is remarkable. I couldn't be happier with my purchase and the ongoing support."
+        "text": "Their expertise and attention to detail is impressive. I am very satisfied with my purchase and ongoing support."
       }
     },
     "brands": {
-      "title": "Our Trusted Brands",
-      "subtitle": "We work with the world's leading automotive brands"
+      "title": "Trusted brands",
+      "subtitle": "We partner with the world's leading automotive brands"
     },
     "services": {
-      "title": "Our Services",
+      "title": "Our services",
       "tradeIn": {
-        "title": "Trade-In Services",
-        "description": "Get the best value for your current vehicle with our fair trade-in program"
+        "title": "Trade-in services",
+        "description": "Get the best value for your current vehicle with our fair trade program"
       },
       "maintenance": {
-        "title": "Maintenance",
-        "description": "Professional maintenance and repair services by certified technicians"
+        "title": "Service and maintenance",
+        "description": "Professional service and repair from certified mechanics"
       },
       "financing": {
-        "title": "Financing Options",
+        "title": "Financing options",
         "description": "Flexible financing solutions tailored to your needs and budget"
       },
       "warranty": {
-        "title": "Extended Warranty",
-        "description": "Comprehensive warranty coverage for your peace of mind"
+        "title": "Extended warranty",
+        "description": "Our comprehensive warranty coverage provides peace of mind"
       }
     },
     "cta": {
-      "title": "Ready to Find Your Perfect Car?",
-      "description": "Browse our collection or contact us for assistance",
-      "primary": "View Inventory",
-      "secondary": "Contact Us"
+      "title": "Ready to find your new car?",
+      "description": "Browse our selection and contact our sales team.",
+      "primary": "View inventory",
+      "secondary": "Contact us"
     },
     "buyCars": {
-      "title": "We Buy Cars",
-      "description": "We continuously buy well-maintained cars with under 150,000 km mileage! We handle all paperwork related to selling your car.",
-      "cta": "Get an Offer"
+      "title": "We buy cars",
+      "description": "We continuously purchase well-maintained cars! We handle all the paperwork related to selling your car.",
+      "cta": "Request a quote"
     },
-    "financing": {
-      "title": "Leasing is an alternative to car ownership",
-      "description": "With Järvi Private Leasing, you can get a new or used car at a fixed monthly cost without a down payment. Simple, hassle-free, and predictable!",
-      "cta": "Learn More"
+    "maintenance": {
+      "title": "Car service",
+      "description": "We offer a wide range of service options. Services, repairs, inspection service and bodywork welding. Book service at +358447227744",
+      "cta": "Book now"
     },
     "search": {
       "title": "Filter cars",
       "make": "Make",
-      "quid": "Quid",
+      "quid": "Model",
       "selected": "selected",
       "modelYear": "Model year",
       "price": "Price",
-      "fuelType": "Fuel type",
-      "gearing": "Gearing",
+      "fuelType": "Fuel",
+      "gearing": "Transmission",
       "automatic": "Automatic",
       "manual": "Manual",
       "clearSelections": "Clear selections",
       "advancedSearch": "OPEN ADVANCED SEARCH",
       "showVehicles": "SHOW {{count}} VEHICLES",
       "semiautomatic": "Semi-automatic",
-      "cvt": "CVT"
+      "cvt": "CVT",
+      "vehicles": "VEHICLES"
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner in finding the perfect vehicle. We offer quality cars and excellent service.",
+    "quickLinks": {
+      "title": "Quick links",
+      "home": "Home",
+      "about": "About",
+      "listing": "Car listings",
+      "contact": "Contact us"
+    },
+    "contact": {
+      "title": "Contact information",
+      "phone": "+358 123 456 789",
+      "email": "info@garage35.fi",
+      "address": "Kangasala, Finland"
+    },
+    "hours": {
+      "title": "Opening hours",
+      "weekdays": "Monday - Friday: 10:00 - 18:00",
+      "saturday": "Saturday: 10:00 - 14:00",
+      "sunday": "Sunday: Closed"
+    },
+    "copyright": {
+      "start": "©",
+      "end": "Garage35. All rights reserved."
     }
   },
   "about": {
     "hero": {
-      "title": "About Garage35",
-      "subtitle": "Your Trusted Partner in Premium Automobiles"
+      "title": "About Garage35:",
+      "subtitle": "Your trusted partner in car buying."
     },
-    "mission": {
-      "title": "Our Mission",
-      "description": "Delivering exceptional automotive experiences through personalized service"
+    "story": {
+      "title": "Company story",
+      "description": "Our company was founded in 2016. Our car dealership has grown from a small local operator to one of the most trusted names in the industry. We focus on customer satisfaction in every area. \n Our goal is to provide a smooth and easy car buying experience with good customer service."
     },
     "values": {
-      "title": "Our Values",
+      "title": "Our values",
       "items": {
         "integrity": {
-          "title": "Integrity",
-          "description": "Honest and transparent dealings"
+          "title": "Honesty",
+          "description": "Honest and transparent business dealings"
         },
         "excellence": {
           "title": "Excellence",
-          "description": "Commitment to superior service"
+          "description": "Commitment to top-quality service"
         },
         "customer": {
-          "title": "Customer Focus",
-          "description": "Your satisfaction is our priority"
+          "title": "Customer focus",
+          "description": "Customer satisfaction is our priority"
         }
       }
     },
     "contact": {
-      "title": "Visit Our Showroom",
-      "description": "Visit our showrooms to explore our premium vehicle collection and meet our expert team",
-      "callNow": "Call Now"
+      "title": "Visit our showroom",
+      "description": "Visit our showroom to explore our premium vehicle selection and meet our expert team",
+      "callNow": "Call now",
+      "hours": {
+        "weekdays": "Mon-Fri",
+        "saturday": "Sat",
+        "sunday": "Sun",
+        "closed": "Closed"
+      }
     },
     "findUs": {
-      "title": "Find Us",
-      "description": "Visit our showroom to explore our premium vehicle collection and meet our expert team"
+      "title": "Find us",
+      "description": "Visit our showroom to explore our premium vehicle selection and meet our expert team"
     }
   },
   "listings": {
-    "noVehicles": "No vehicles found with the selected filters",
+    "noVehicles": "No vehicles found with selected filters",
     "hero": {
-      "title": "Our Vehicle Collection",
-      "subtitle": "Explore our premium selection of vehicles"
+      "title": "Vehicle inventory",
+      "subtitle": "Versatile financing options"
     },
     "sort": {
       "showing": "Showing {{count}} vehicles",
       "newest": "Newest first",
-      "priceAsc": "Price: Low to High",
-      "priceDesc": "Price: High to Low",
-      "mileageAsc": "Mileage: Low to High",
-      "mileageDesc": "Mileage: High to Low",
-      "yearAsc": "Year: Low to High",
-      "yearDesc": "Year: High to Low"
+      "priceAsc": "Price: Lowest first",
+      "priceDesc": "Price: Highest first",
+      "mileageAsc": "Mileage: Lowest first",
+      "mileageDesc": "Mileage: Highest first",
+      "yearAsc": "Model year: Oldest first",
+      "yearDesc": "Model year: Newest first"
     },
     "car": {
       "notFound": "Car not found",
-      "basicInfo": "Basic Information",
-      "technicalInfo": "Technical Information",
+      "basicInfo": "Basic information",
+      "technicalInfo": "Technical information",
       "features": "Features",
       "description": "Description",
       "financing": "From",
       "month": "month",
       "updated": "Updated",
-      "inspection": "Last inspection",
+      "inspection": "Latest inspection",
       "deliveryFee": "Delivery fee",
       "financingDetails": {
-        "duration": "Finance duration",
+        "duration": "Financing period",
         "months": "months",
         "downPayment": "Down payment"
       },
       "specs": {
-        "year": "Year",
+        "unknown": "-",
+        "year": "Model year",
+        "make": "Make",
         "model": "Model",
         "mileage": "Mileage",
-        "bodyType": "Body Type",
-        "registration": "Registration",
-        "fuelType": "Fuel Type",
+        "bodyType": "Body type",
+        "registration": "Registration number",
+        "fuelType": "Fuel",
         "transmission": "Transmission",
         "doors": "Doors",
         "drive": "Drive",
         "power": "Power",
         "weight": "Weight",
-        "topSpeed": "Top Speed",
+        "topSpeed": "Top speed",
         "consumption": "Consumption",
-        "co2": "CO2 Emissions",
+        "co2": "CO2 emissions",
         "transmissionTypes": {
           "automaattinen": "Automatic",
           "manuaalinen": "Manual",
@@ -228,52 +264,50 @@
           "hybrid": "Hybrid",
           "unknown": "Unknown"
         },
-        "gearingTypes": {
-          "fwd": "Front-wheel drive",
-          "rwd": "Rear-wheel drive",
-          "awd": "All-wheel drive"
+        "driveType": {
+          "takaveto": "Rear-wheel drive",
+          "etuveto": "Front-wheel drive",
+          "neliveto": "All-wheel drive"
         },
         "bodyTypes": {
           "sedan": "Sedan",
           "hatchback": "Hatchback",
           "estate": "Estate",
           "suv": "SUV",
-          "coupe": "Coupé",
+          "coupe": "Coupe",
           "convertible": "Convertible",
           "van": "Van"
         }
       },
-      "cta": "Display on Nettiauto"
+      "cta": "View on Nettiauto"
     },
     "pagination": {
       "previous": "Previous",
       "next": "Next"
     }
   },
-  "footer": {
-    "description": "Your trusted partner in finding the perfect vehicle. We provide quality cars and exceptional service.",
-    "quickLinks": {
-      "title": "Quick Links",
-      "home": "Home",
-      "about": "About Us",
-      "listing": "Car Listing",
-      "contact": "Contact Us"
+  "maintenance": {
+    "hero": {
+      "title": "Car service",
+      "subtitle": "We offer a wide range of automotive service options."
     },
-    "contact": {
-      "title": "Contact Info",
-      "phone": "+358 123 456 789",
-      "email": "info@garage35.fi",
-      "address": "Tampere, Finland"
+    "services": {
+      "tireServices": {
+        "title": "Tire change",
+        "description": "Professional tire changing. Tire change, balancing."
+      },
+      "vehicleInspection": {
+        "title": "Vehicle inspection",
+        "description": "We handle your vehicle's entire inspection process ensuring it meets all safety and regulatory requirements."
+      },
+      "generalMaintenance": {
+        "title": "General maintenance",
+        "description": "Regular maintenance services to keep your vehicle in optimal condition."
+      }
     },
-    "hours": {
-      "title": "Business Hours",
-      "weekdays": "Monday - Friday: 9:00 - 18:00",
-      "saturday": "Saturday: 9:00 - 17:00",
-      "sunday": "Sunday: Closed"
-    },
-    "copyright": {
-      "start": "©",
-      "end": "Garage35. All rights reserved."
+    "callNow": {
+      "title": "Book service",
+      "description": "Contact us to book service or vehicle inspection. We keep your vehicle in good condition."
     }
   }
 }

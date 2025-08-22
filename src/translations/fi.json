@@ -2,57 +2,58 @@
   "nav": {
     "home": "ETUSIVU",
     "listing": "AUTOT",
-    "about": "TIETOA"
+    "about": "MEISTÄ",
+    "maintenance": "HUOLTO"
   },
   "home": {
     "hero": {
-      "welcome": "Tervetuloa Garage35:n sivustolle",
-      "title": "LÖYDÄ TÄYDELLINEN UUSI AUTO",
-      "subtitle": "Tutustu laajaan valikoimaamme premium-ajoneuvoja",
+      "welcome": "Tervetuloa Garage35:een",
+      "title": "Auton vaihto mielessä? Meiltä auto joka tarpeisiin!",
+      "subtitle": "Tutustu laajaan ajoneuvovalikoimaan.",
       "cta": "LUE LISÄÄ",
       "learnMore": "Lue lisää",
       "stats": {
-        "cars": "Autoa saatavilla",
+        "cars": "Saatavilla olevat autot",
         "experience": "Vuoden kokemus",
         "support": "Tuki saatavilla"
       }
     },
     "featured": {
-      "title": "Esitellyt autot",
-      "subtitle": "Tutustu premium-autovalikoimaamme",
-      "viewDetails": "Katso lisätiedot",
-      "viewAll": "Katso kaikki autot",
-      "featured": "ESITELTY"
+      "title": "Esittelyssä olevat autot",
+      "subtitle": "Tutustu valikoituihin ensiluokkaisiin ajoneuvoihin",
+      "viewDetails": "Näytä tiedot",
+      "viewAll": "Näytä kaikki listaukset",
+      "featured": "ESITTELYSSÄ"
     },
     "whyChooseUs": {
       "title": "Miksi valita meidät?",
-      "subtitle": "Koe autoalan huippupalvelua",
+      "subtitle": "Koe ensiluokkainen autoalan palvelu",
       "features": {
         "expert": {
-          "title": "Asiantunteva ohjaus",
-          "description": "Ammattimaista neuvontaa kokeneelta tiimiltämme"
+          "title": "Asiantunteva opastus",
+          "description": "Ammattitaitoista neuvontaa kokeneelta tiimiltämme"
         },
         "trusted": {
           "title": "Luotettava palvelu",
-          "description": "Rakennamme suhteita luotettavan palvelun kautta"
+          "description": "Rakennamme asiakassuhteita luotettavalla palvelulla"
         },
         "selection": {
           "title": "Laaja valikoima",
-          "description": "Kattava valikoima premium-ajoneuvoja"
+          "description": "Laaja valikoima ensiluokkaisia ajoneuvoja"
         }
       }
     },
     "stats": {
       "carsAvailable": {
-        "number": "1000+",
-        "label": "Autoa saatavilla"
+        "number": "80+",
+        "label": "Saatavilla olevat autot"
       },
       "happyCustomers": {
-        "number": "5000+",
-        "label": "Tyytyväistä asiakasta"
+        "number": "1000+",
+        "label": "Tyytyväiset asiakkaat"
       },
       "yearsExperience": {
-        "number": "15+",
+        "number": "10+",
         "label": "Vuoden kokemus"
       },
       "satisfactionRate": {
@@ -62,61 +63,61 @@
     },
     "testimonials": {
       "title": "Mitä asiakkaamme sanovat",
-      "subtitle": "Aitoja kokemuksia asiakkailtamme",
+      "subtitle": "Asiakkaidemme todellisia kokemuksia",
       "first": {
         "role": "Yrittäjä",
-        "text": "Erinomaista palvelua ja fantastinen valikoima premium-autoja. Tiimi oli uskomattoman avulias löytämään täydellisen auton tarpeisiini."
+        "text": "Erinomainen palvelu ja upea valikoima ensiluokkaisia ajoneuvoja. Tiimi auttoi löytämään täydellisen auton tarpeisiini."
       },
       "second": {
-        "role": "Ammattikuski",
-        "text": "Autojen laatu ja asiakaspalvelu ovat ensiluokkaisia. He tekivät koko prosessista sujuvan ja miellyttävän."
+        "role": "Ammattikuljettaja",
+        "text": "Ajoneuvojen laatu ja asiakaspalvelu ovat huippuluokkaa. Koko ostoprosessi sujui vaivattomasti ja miellyttävästi."
       },
       "third": {
-        "role": "Liikemies",
-        "text": "Heidän asiantuntemuksensa ja huomio yksityiskohtiin on huomattavaa. En voisi olla tyytyväisempi hankintaani ja jatkuvaan tukeen."
+        "role": "Yrittäjä",
+        "text": "Heidän asiantuntemuksensa ja huomionsa yksityiskohtiin on vaikuttavaa. Olen erittäin tyytyväinen ostokseeni ja jatkuvaan tukeen."
       }
     },
     "brands": {
-      "title": "Luotetut merkkimme",
+      "title": "Luotetut merkit",
       "subtitle": "Teemme yhteistyötä maailman johtavien automerkkien kanssa"
     },
     "services": {
       "title": "Palvelumme",
       "tradeIn": {
-        "title": "Vaihtoautopalvelu",
-        "description": "Saat parhaan arvon nykyisestä autostasi reilulla vaihto-ohjelmalla"
+        "title": "Vaihtopalvelut",
+        "description": "Saat parhaan arvon nykyisestä ajoneuvostasi reilulla vaihtoprogrammillamme"
       },
       "maintenance": {
-        "title": "Huolto",
-        "description": "Ammattimaista huoltoa ja korjauspalvelua sertifioiduilta teknikoilta"
+        "title": "Huoltopalvelut",
+        "description": "Ammattitaitoinen huolto ja korjaus sertifioiduilta mekaanikoilta"
       },
       "financing": {
         "title": "Rahoitusvaihtoehdot",
-        "description": "Joustavat rahoitusratkaisut tarpeisiisi ja budjettiisi"
+        "description": "Joustavat rahoitusratkaisut tarpeidesi ja budjettisi mukaan"
       },
       "warranty": {
         "title": "Laajennettu takuu",
-        "description": "Kattava takuuturva mielenrauhasi takaamiseksi"
+        "description": "Kattava takuusuojamme tarjoaa mielenrauhaa"
       }
     },
     "cta": {
-      "title": "Valmis löytämään täydellisen auton?",
-      "description": "Selaa valikoimaamme tai ota yhteyttä",
-      "primary": "Katso valikoima",
+      "title": "Oletko valmis löytämään uuden autosi?",
+      "description": "Selaa valikoimaamme ja ota yhteyttä myyjiimme.",
+      "primary": "Näytä varasto",
       "secondary": "Ota yhteyttä"
     },
     "buyCars": {
       "title": "Ostamme autoja",
-      "description": "Ostamme jatkuvasti hyväkuntoisia ja alle 150 000 km ajettuja autoja! Hoidamme puolestasi auton myyntiin liittyvät paperityöt.",
+      "description": "Ostamme jatkuvasti hyvin huollettuja autoja! Hoidamme kaikki autosi myyntiin liittyvät paperityöt.",
       "cta": "Pyydä tarjous"
     },
-    "financing": {
-      "title": "Liisaus on vaihtoehto auton omistamiselle",
-      "description": "Järvi Yksityisleasingin avulla pääset uuden tai vaihtoauton rattiin kiinteällä kuukausihinnalla ilman käsirahaa. Yksinkertaista, vaivatonta ja ennakoitavaa!",
-      "cta": "Lue lisää"
+    "maintenance": {
+      "title": "Auton huolto",
+      "description": "Tarjoamme laajan valikoiman huoltopalveluja. Huollot, korjaukset, katsastuspalvelu ja korinhitsaustyöt. Varaa huolto p. +358447227744",
+      "cta": "Varaa nyt"
     },
     "search": {
-      "title": "Hae vaihtoautoja",
+      "title": "Suodata autoja",
       "make": "Merkki",
       "quid": "Malli",
       "selected": "valittu",
@@ -130,66 +131,102 @@
       "advancedSearch": "AVAA TARKEMPI HAKU",
       "showVehicles": "NÄYTÄ {{count}} AJONEUVOA",
       "semiautomatic": "Puoliautomaatti",
-      "cvt": "CVT"
+      "cvt": "CVT",
+      "vehicles": "AJONEUVOA"
+    }
+  },
+  "footer": {
+    "description": "Luotettu kumppanisi täydellisen ajoneuvon löytämisessä. Tarjoamme laadukkaita autoja ja erinomaista palvelua.",
+    "quickLinks": {
+      "title": "Pikalinkit",
+      "home": "Etusivu",
+      "about": "Meistä",
+      "listing": "Autolistaus",
+      "contact": "Ota yhteyttä"
+    },
+    "contact": {
+      "title": "Yhteystiedot",
+      "phone": "+358 123 456 789",
+      "email": "info@garage35.fi",
+      "address": "Kangasala, Suomi"
+    },
+    "hours": {
+      "title": "Aukioloajat",
+      "weekdays": "Maanantai - Perjantai: 10:00 - 18:00",
+      "saturday": "Lauantai: 10:00 - 14:00",
+      "sunday": "Sunnuntai: Suljettu"
+    },
+    "copyright": {
+      "start": "©",
+      "end": "Garage35. Kaikki oikeudet pidätetään."
     }
   },
   "about": {
     "hero": {
-      "title": "Tietoa Garage35:stä",
-      "subtitle": "Luotettu kumppanisi premium-autoissa"
+      "title": "Tietoa Garage35 yrityksestä:",
+      "subtitle": "Luotettava kumppanisi auton ostossa."
     },
-    "mission": {
-      "title": "Tehtävämme",
-      "description": "Tarjoamme poikkeuksellisia autokokemuksia henkilökohtaisen palvelun kautta"
+    "story": {
+      "title": "Yrityksen tarina",
+      "description": "Yrityksemme on perustettu vuonna 2016. Autoliikkeemme on kasvanut pienestä paikallisesta toimijasta alan yhdeksi luotettavimmista nimistä. Panostamme asiakastyytyväisyyteen joka alueella. \n Tavoittemme on tarjota vaivaton ja helppo auton ostokokemus hyvällä asiakaspalvelulla."
     },
     "values": {
-      "title": "Arvomme",
+      "title": "Meidän arvomme",
       "items": {
         "integrity": {
           "title": "Rehellisyys",
-          "description": "Rehellistä ja läpinäkyvää toimintaa"
+          "description": "Rehelliset ja läpinäkyvät liiketoimet"
         },
         "excellence": {
           "title": "Erinomaisuus",
-          "description": "Sitoutuminen parhaaseen palveluun"
+          "description": "Sitoutuminen huippulaatuiseen palveluun"
         },
         "customer": {
           "title": "Asiakaslähtöisyys",
-          "description": "Tyytyväisyytesi on prioriteettimme"
+          "description": "Asiakastyytyväisyys on meille tärkeintä"
         }
       }
     },
     "contact": {
       "title": "Vieraile näyttelytilassamme",
-      "description": "Vieraile näyttelytiloihimme tutustuaksesi premium-autovalikoimaamme ja tavataksesi asiantuntijatiimimme",
-      "callNow": "Soita nyt"
+      "description": "Vieraile näyttelytiloissamme tutustuaksesi ensiluokkaiseen ajoneuvovalikoimaamme ja tavataksesi asiantuntijatiimimme",
+      "callNow": "Soita nyt",
+      "hours": {
+        "weekdays": "Ma-Pe",
+        "saturday": "La",
+        "sunday": "Su",
+        "closed": "Suljettu"
+      }
     },
     "findUs": {
       "title": "Löydä meidät",
-      "description": "Vieraile näyttelytilassamme tutustuaksesi premium-autovalikoimaamme ja tavataksesi asiantuntijatiimimme"
+      "description": "Vieraile näyttelytilassamme tutustuaksesi ensiluokkaiseen ajoneuvovalikoimaamme ja tavataksesi asiantuntijatiimimme"
     }
   },
   "listings": {
+    "noVehicles": "Valituilla suodattimilla ei löytynyt ajoneuvoja",
     "hero": {
-      "title": "Autovalikoimamme",
-      "subtitle": "Tutustu premium-autovalikoimaamme"
+      "title": "Ajoneuvovalikoima",
+      "subtitle": "Monipuoliset rahoitusvaihtoehdot"
     },
     "sort": {
       "showing": "Näytetään {{count}} ajoneuvoa",
       "newest": "Uusimmat ensin",
-      "priceAsc": "Hinta: Halvin ensin",
+      "priceAsc": "Hinta: Edullisin ensin",
       "priceDesc": "Hinta: Kallein ensin",
-      "mileage": "Kilometrit",
-      "year": "Vuosimalli"
+      "mileageAsc": "Kilometrit: Vähiten ajetut ensin",
+      "mileageDesc": "Kilometrit: Eniten ajetut ensin",
+      "yearAsc": "Vuosimalli: Vanhimmat ensin",
+      "yearDesc": "Vuosimalli: Uusimmat ensin"
     },
     "car": {
       "notFound": "Autoa ei löytynyt",
       "basicInfo": "Perustiedot",
       "technicalInfo": "Tekniset tiedot",
-      "features": "Varusteet",
+      "features": "Ominaisuudet",
       "description": "Kuvaus",
       "financing": "Alkaen",
-      "month": "kk",
+      "month": "kuukausi",
       "updated": "Päivitetty",
       "inspection": "Viimeisin katsastus",
       "deliveryFee": "Toimituskulut",
@@ -199,17 +236,19 @@
         "downPayment": "Käsiraha"
       },
       "specs": {
+        "unknown": "-",
         "year": "Vuosimalli",
+        "make": "Merkki",
         "model": "Malli",
-        "mileage": "Kilometrit",
+        "mileage": "Mittarilukema",
         "bodyType": "Korimalli",
         "registration": "Rekisterinumero",
-        "fuelType": "Käyttövoima",
+        "fuelType": "Polttoaine",
         "transmission": "Vaihteisto",
-        "doors": "Ovien lukumäärä",
-        "drive": "Vetotapa",
+        "doors": "Ovet",
+        "drive": "Veto",
         "power": "Teho",
-        "weight": "Omamassa",
+        "weight": "Paino",
         "topSpeed": "Huippunopeus",
         "consumption": "Kulutus",
         "co2": "CO2-päästöt",
@@ -223,18 +262,18 @@
           "diesel": "Diesel",
           "electric": "Sähkö",
           "hybrid": "Hybridi",
-          "unknown": "Ei tiedossa"
+          "unknown": "Tuntematon"
         },
-        "gearingTypes": {
-          "fwd": "Etuveto",
-          "rwd": "Takaveto",
-          "awd": "Neliveto"
+        "driveType": {
+          "takaveto": "Takaveto",
+          "etuveto": "Etuveto",
+          "neliveto": "Neliveto"
         },
         "bodyTypes": {
           "sedan": "Sedan",
           "hatchback": "Viistoperä",
           "estate": "Farmari",
-          "suv": "Maasturi",
+          "suv": "Katumaasturi",
           "coupe": "Coupé",
           "convertible": "Avoauto",
           "van": "Pakettiauto"
@@ -247,30 +286,28 @@
       "next": "Seuraava"
     }
   },
-  "footer": {
-    "description": "Luotettu kumppanisi täydellisen auton löytämisessä. Tarjoamme laadukkaita autoja ja erinomaista palvelua.",
-    "quickLinks": {
-      "title": "Pikalinkit",
-      "home": "Etusivu",
-      "about": "Tietoa meistä",
-      "listing": "Autot",
-      "contact": "Ota yhteyttä"
+  "maintenance": {
+    "hero": {
+      "title": "Auton huolto",
+      "subtitle": "Tarjoamme laajan valikoiman autonhuoltopalveluja."
     },
-    "contact": {
-      "title": "Yhteystiedot",
-      "phone": "+358 123 456 789",
-      "email": "info@garage35.fi",
-      "address": "Tampere, Suomi"
+    "services": {
+      "tireServices": {
+        "title": "Renkaidenvaihto",
+        "description": "Ammattitaitoinen renkaiden vaihto. Renkaanvaihto, tasapainotus."
+      },
+      "vehicleInspection": {
+        "title": "Ajoneuvotarkastus",
+        "description": "Hoidamme ajoneuvosi koko katsastusprosessin varmistaen, että se täyttää kaikki turvallisuus- ja säädösvaatimukset."
+      },
+      "generalMaintenance": {
+        "title": "Yleishuolto",
+        "description": "Säännölliset huoltopalvelut, jotta ajoneuvosi pysyy optimaalisessa kunnossa."
+      }
     },
-    "hours": {
-      "title": "Aukioloajat",
-      "weekdays": "Maanantai - Perjantai: 9:00 - 18:00",
-      "saturday": "Lauantai: 9:00 - 17:00",
-      "sunday": "Sunnuntai: Suljettu"
-    },
-    "copyright": {
-      "start": "©",
-      "end": "Garage35. Kaikki oikeudet pidätetään."
+    "callNow": {
+      "title": "Varaa huoltopalvelu",
+      "description": "Ota yhteyttä varataksesi huoltopalvelun tai ajoneuvotarkastuksen. Pidämme ajoneuvosi kunnossa."
     }
   }
 }

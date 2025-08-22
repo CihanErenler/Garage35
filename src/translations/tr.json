@@ -2,183 +2,256 @@
   "nav": {
     "home": "ANA SAYFA",
     "listing": "ARAÇLAR",
-    "about": "HAKKIMIZDA"
+    "about": "HAKKIMIZDA",
+    "maintenance": "SERVİS"
   },
   "home": {
     "hero": {
       "welcome": "Garage35'e Hoş Geldiniz",
-      "title": "YENİ ARACINIZI BULUN",
-      "subtitle": "Premium araç koleksiyonumuzu keşfedin",
-      "cta": "DAHA FAZLA",
-      "learnMore": "Daha Fazla",
+      "title": "Araç değişimi mi düşünüyorsunuz? İhtiyaçlarınıza uygun aracımız var!",
+      "subtitle": "Geniş araç yelpazemizi keşfedin.",
+      "cta": "DEVAMINI OKU",
+      "learnMore": "Daha fazla oku",
       "stats": {
-        "cars": "Mevcut Araç",
-        "experience": "Yıllık Deneyim",
-        "support": "Destek Mevcut"
+        "cars": "Mevcut araçlar",
+        "experience": "Yıllık deneyim",
+        "support": "Destek mevcut"
       }
     },
     "featured": {
-      "title": "Öne Çıkan Araçlar",
-      "subtitle": "Premium araç seçeneklerimizi keşfedin",
-      "viewDetails": "Detayları Gör",
-      "viewAll": "Tüm Araçları Gör",
+      "title": "Öne çıkan araçlar",
+      "subtitle": "Seçkin premium araçları keşfedin",
+      "viewDetails": "Detayları gör",
+      "viewAll": "Tüm ilanları gör",
       "featured": "ÖNE ÇIKAN"
     },
     "whyChooseUs": {
-      "title": "Neden Biz?",
-      "subtitle": "Otomotiv hizmetlerinde mükemmelliği deneyimleyin",
+      "title": "Neden bizi seçmelisiniz?",
+      "subtitle": "Premium otomotiv hizmeti deneyimi yaşayın",
       "features": {
         "expert": {
-          "title": "Uzman Rehberlik",
-          "description": "Deneyimli ekibimizden profesyonel tavsiyeler"
+          "title": "Uzman rehberlik",
+          "description": "Deneyimli ekibimizden profesyonel danışmanlık"
         },
         "trusted": {
-          "title": "Güvenilir Hizmet",
-          "description": "Güvenilir hizmet ile ilişkiler kuruyoruz"
+          "title": "Güvenilir hizmet",
+          "description": "Güvenilir hizmetimizle müşteri ilişkileri kuruyoruz"
         },
         "selection": {
-          "title": "Geniş Seçenek",
+          "title": "Geniş seçenek",
           "description": "Geniş premium araç yelpazesi"
         }
       }
     },
     "stats": {
       "carsAvailable": {
-        "number": "1000+",
-        "label": "Mevcut Araç"
+        "number": "80+",
+        "label": "Mevcut araçlar"
       },
       "happyCustomers": {
-        "number": "5000+",
-        "label": "Mutlu Müşteri"
+        "number": "1000+",
+        "label": "Mutlu müşteriler"
       },
       "yearsExperience": {
-        "number": "15+",
-        "label": "Yıllık Deneyim"
+        "number": "10+",
+        "label": "Yıllık deneyim"
       },
       "satisfactionRate": {
         "number": "100%",
-        "label": "Memnuniyet Oranı"
+        "label": "Memnuniyet oranı"
       }
     },
     "testimonials": {
-      "title": "Müşterilerimiz Ne Diyor",
-      "subtitle": "Müşterilerimizden gerçek deneyimler",
+      "title": "Müşterilerimiz ne diyor",
+      "subtitle": "Müşterilerimizin gerçek deneyimleri",
       "first": {
         "role": "Girişimci",
-        "text": "Mükemmel hizmet ve fantastik premium araç seçenekleri. Ekip ihtiyaçlarıma uygun mükemmel aracı bulmamda inanılmaz yardımcı oldu."
+        "text": "Mükemmel hizmet ve harika premium araç seçkisi. Ekip, ihtiyaçlarıma uygun mükemmel aracı bulmama yardımcı oldu."
       },
       "second": {
-        "role": "Profesyonel Sürücü",
-        "text": "Araçların kalitesi ve müşteri hizmetleri birinci sınıf. Tüm süreci sorunsuz ve keyifli hale getirdiler."
+        "role": "Profesyonel sürücü",
+        "text": "Araç kalitesi ve müşteri hizmeti birinci sınıf. Tüm satın alma süreci sorunsuz ve keyifli geçti."
       },
       "third": {
-        "role": "İş Adamı",
-        "text": "Uzmanlıkları ve detaylara verdikleri önem dikkat çekici. Satın aldığım araç ve sürekli desteklerinden daha memnun olamazdım."
+        "role": "Girişimci",
+        "text": "Uzmanlıkları ve detaylara gösterdikleri özen etkileyici. Satın alımımdan ve sürekli destekten çok memnunum."
       }
     },
     "brands": {
-      "title": "Güvenilir Markalarımız",
-      "subtitle": "Dünyanın önde gelen otomobil markalarıyla çalışıyoruz"
+      "title": "Güvenilir markalar",
+      "subtitle": "Dünyanın önde gelen otomotiv markalarıyla ortaklık yapıyoruz"
     },
     "services": {
       "title": "Hizmetlerimiz",
       "tradeIn": {
-        "title": "Takas",
+        "title": "Takas hizmetleri",
         "description": "Adil takas programımızla mevcut aracınız için en iyi değeri alın"
       },
       "maintenance": {
-        "title": "Bakım",
-        "description": "Sertifikalı teknisyenlerden profesyonel bakım ve onarım hizmetleri"
+        "title": "Servis ve bakım",
+        "description": "Sertifikalı mekaniklerimizden profesyonel servis ve onarım"
       },
       "financing": {
-        "title": "Finansman Seçenekleri",
-        "description": "İhtiyaçlarınıza ve bütçenize uygun esnek finansman çözümleri"
+        "title": "Finansman seçenekleri",
+        "description": "İhtiyaçlarınıza ve bütçenize göre esnek finansman çözümleri"
       },
       "warranty": {
-        "title": "Genişletilmiş Garanti",
-        "description": "Gönül rahatlığınız için kapsamlı garanti koruması"
+        "title": "Genişletilmiş garanti",
+        "description": "Kapsamlı garanti teminatımız size huzur verir"
       }
     },
     "cta": {
-      "title": "Mükemmel aracınızı bulmaya hazır mısınız?",
-      "description": "Koleksiyonumuza göz atın veya bizimle iletişime geçin",
-      "primary": "Araçları Gör",
-      "secondary": "İletişime Geç"
+      "title": "Yeni aracınızı bulmaya hazır mısınız?",
+      "description": "Seçeneklerimize göz atın ve satış ekibimizle iletişime geçin.",
+      "primary": "Stoğu görüntüle",
+      "secondary": "İletişime geç"
     },
     "buyCars": {
-      "title": "Araç Alıyoruz",
-      "description": "İyi durumda ve 150.000 km altı araçları sürekli alıyoruz! Araç satışıyla ilgili tüm evrak işlerini sizin için hallediyoruz.",
-      "cta": "Teklif İste"
+      "title": "Araç satın alıyoruz",
+      "description": "Sürekli olarak iyi bakımlı araçlar satın alıyoruz! Aracınızın satışıyla ilgili tüm evrak işlerini hallederiz.",
+      "cta": "Teklif iste"
     },
-    "financing": {
-      "title": "Kiralama araç sahibi olmanın alternatifidir",
-      "description": "Özel Kiralama ile peşinatsız, sabit aylık ödeme ile yeni veya ikinci el araç sahibi olun. Basit, zahmetsiz ve öngörülebilir!",
-      "cta": "Daha Fazla Bilgi"
+    "maintenance": {
+      "title": "Araç servisi",
+      "description": "Geniş servis seçenekleri sunuyoruz. Servisler, onarımlar, muayene hizmeti ve kaportaj kaynak işleri. Servis rezervasyonu için +358447227744",
+      "cta": "Şimdi rezervasyon yap"
     },
     "search": {
-      "title": "Araç Ara",
+      "title": "Araçları filtrele",
       "make": "Marka",
       "quid": "Model",
-      "selected": "seçildi",
-      "modelYear": "Model Yılı",
+      "selected": "seçili",
+      "modelYear": "Model yılı",
       "price": "Fiyat",
-      "fuelType": "Yakıt Tipi",
+      "fuelType": "Yakıt",
       "gearing": "Şanzıman",
       "automatic": "Otomatik",
       "manual": "Manuel",
-      "clearSelections": "Seçimleri Temizle",
-      "advancedSearch": "GELİŞMİŞ ARAMA",
-      "showVehicles": "{{count}} ARACI GÖSTER",
-      "semiautomatic": "Yarı Otomatik",
-      "cvt": "CVT"
+      "clearSelections": "Seçimleri temizle",
+      "advancedSearch": "DETAYLI ARAMAYA GEÇ",
+      "showVehicles": "{{count}} ARAÇ GÖSTER",
+      "semiautomatic": "Yarı otomatik",
+      "cvt": "CVT",
+      "vehicles": "ARAÇ"
+    }
+  },
+  "footer": {
+    "description": "Mükemmel aracı bulmanızda güvenilir ortağınız. Kaliteli araçlar ve mükemmel hizmet sunuyoruz.",
+    "quickLinks": {
+      "title": "Hızlı linkler",
+      "home": "Ana sayfa",
+      "about": "Hakkımızda",
+      "listing": "Araç ilanları",
+      "contact": "İletişime geç"
+    },
+    "contact": {
+      "title": "İletişim bilgileri",
+      "phone": "+358 123 456 789",
+      "email": "info@garage35.fi",
+      "address": "Kangasala, Finlandiya"
+    },
+    "hours": {
+      "title": "Çalışma saatleri",
+      "weekdays": "Pazartesi - Cuma: 10:00 - 18:00",
+      "saturday": "Cumartesi: 10:00 - 14:00",
+      "sunday": "Pazar: Kapalı"
+    },
+    "copyright": {
+      "start": "©",
+      "end": "Garage35. Tüm hakları saklıdır."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Garage35 hakkında:",
+      "subtitle": "Araç alımında güvenilir ortağınız."
+    },
+    "story": {
+      "title": "Şirket hikayesi",
+      "description": "Şirketimiz 2016 yılında kuruldu. Oto galerimiz küçük bir yerel işletmeden sektörün en güvenilen isimlerinden birine dönüştü. Her alanda müşteri memnuniyetine odaklanıyoruz. \n Amacımız iyi müşteri hizmetiyle sorunsuz ve kolay bir araç satın alma deneyimi sunmaktır."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "items": {
+        "integrity": {
+          "title": "Dürüstlük",
+          "description": "Dürüst ve şeffaf iş anlaşmaları"
+        },
+        "excellence": {
+          "title": "Mükemmellik",
+          "description": "En kaliteli hizmete bağlılık"
+        },
+        "customer": {
+          "title": "Müşteri odaklılık",
+          "description": "Müşteri memnuniyeti önceliğimizdir"
+        }
+      }
+    },
+    "contact": {
+      "title": "Showroomumuzu ziyaret edin",
+      "description": "Premium araç seçeneklerimizi keşfetmek ve uzman ekibimizle tanışmak için showroomumuzu ziyaret edin",
+      "callNow": "Şimdi ara",
+      "hours": {
+        "weekdays": "Pzt-Cum",
+        "saturday": "Cmt",
+        "sunday": "Pzr",
+        "closed": "Kapalı"
+      }
+    },
+    "findUs": {
+      "title": "Bizi bulun",
+      "description": "Premium araç seçeneklerimizi keşfetmek ve uzman ekibimizle tanışmak için showroomumuzu ziyaret edin"
     }
   },
   "listings": {
-    "noVehicles": "Araç bulunamadı",
+    "noVehicles": "Seçilen filtrelerle araç bulunamadı",
     "hero": {
-      "title": "Araç Koleksiyonumuz",
-      "subtitle": "Premium araç seçeneklerimizi keşfedin"
+      "title": "Araç stoğu",
+      "subtitle": "Çok yönlü finansman seçenekleri"
     },
     "sort": {
       "showing": "{{count}} araç gösteriliyor",
-      "newest": "En yeniler",
-      "priceAsc": "Fiyat: Düşükten Yükseğe",
-      "priceDesc": "Fiyat: Yüksekten Düşüğe",
-      "mileage": "Kilometre",
-      "year": "Yıl"
+      "newest": "Önce en yeniler",
+      "priceAsc": "Fiyat: Önce en ucuz",
+      "priceDesc": "Fiyat: Önce en pahalı",
+      "mileageAsc": "Kilometre: Önce en az",
+      "mileageDesc": "Kilometre: Önce en çok",
+      "yearAsc": "Model yılı: Önce en eski",
+      "yearDesc": "Model yılı: Önce en yeni"
     },
     "car": {
       "notFound": "Araç bulunamadı",
-      "basicInfo": "Temel Bilgiler",
-      "technicalInfo": "Teknik Bilgiler",
+      "basicInfo": "Temel bilgiler",
+      "technicalInfo": "Teknik bilgiler",
       "features": "Özellikler",
       "description": "Açıklama",
       "financing": "Başlangıç",
       "month": "ay",
       "updated": "Güncellendi",
-      "inspection": "Son Muayene",
-      "deliveryFee": "Teslimat Ücreti",
+      "inspection": "Son muayene",
+      "deliveryFee": "Teslimat ücreti",
       "financingDetails": {
-        "duration": "Finansman Süresi",
+        "duration": "Finansman süresi",
         "months": "ay",
         "downPayment": "Peşinat"
       },
       "specs": {
+        "unknown": "-",
+        "year": "Model yılı",
         "make": "Marka",
         "model": "Model",
         "mileage": "Kilometre",
-        "bodyType": "Kasa Tipi",
-        "registration": "Plaka",
-        "fuelType": "Yakıt Tipi",
-        "transmission": "Vites",
-        "doors": "Kapı Sayısı",
+        "bodyType": "Kasa tipi",
+        "registration": "Plaka numarası",
+        "fuelType": "Yakıt",
+        "transmission": "Şanzıman",
+        "doors": "Kapılar",
         "drive": "Çekiş",
         "power": "Güç",
         "weight": "Ağırlık",
-        "topSpeed": "Maksimum Hız",
-        "consumption": "Yakıt Tüketimi",
-        "co2": "CO2 Emisyonu",
-        "year": "Model Yılı",
+        "topSpeed": "Maksimum hız",
+        "consumption": "Tüketim",
+        "co2": "CO2 emisyonu",
         "transmissionTypes": {
           "automaattinen": "Otomatik",
           "manuaalinen": "Manuel",
@@ -189,54 +262,52 @@
           "diesel": "Dizel",
           "electric": "Elektrik",
           "hybrid": "Hibrit",
-          "unknown": "Bilinmiyor"
+          "unknown": "Bilinmeyen"
         },
-        "gearingTypes": {
-          "fwd": "Önden çekiş",
-          "rwd": "Arkadan itiş",
-          "awd": "Dört çeker"
+        "driveType": {
+          "takaveto": "Arkadan çekiş",
+          "etuveto": "Önden çekiş",
+          "neliveto": "Dört çeker"
         },
         "bodyTypes": {
           "sedan": "Sedan",
           "hatchback": "Hatchback",
-          "estate": "Station Wagon",
+          "estate": "Station wagon",
           "suv": "SUV",
-          "coupe": "Coupé",
+          "coupe": "Coupe",
           "convertible": "Cabrio",
           "van": "Van"
         }
       },
-      "cta": "Nettiauto'da Göster"
+      "cta": "Nettiauto'da görüntüle"
     },
     "pagination": {
       "previous": "Önceki",
       "next": "Sonraki"
     }
   },
-  "footer": {
-    "description": "Mükemmel aracınızı bulmanızda güvenilir ortağınız. Kaliteli araçlar ve üstün hizmet sunuyoruz.",
-    "quickLinks": {
-      "title": "Hızlı Bağlantılar",
-      "home": "Ana Sayfa",
-      "about": "Hakkımızda",
-      "listing": "Araçlar",
-      "contact": "İletişim"
+  "maintenance": {
+    "hero": {
+      "title": "Araç servisi",
+      "subtitle": "Geniş otomotiv servis seçenekleri sunuyoruz."
     },
-    "contact": {
-      "title": "İletişim Bilgileri",
-      "phone": "+358 123 456 789",
-      "email": "info@garage35.fi",
-      "address": "Tampere, Finlandiya"
+    "services": {
+      "tireServices": {
+        "title": "Lastik değişimi",
+        "description": "Profesyonel lastik değişimi. Lastik takma, balans."
+      },
+      "vehicleInspection": {
+        "title": "Araç muayenesi",
+        "description": "Aracınızın tüm muayene sürecini yürütüyor, tüm güvenlik ve mevzuat gereksinimlerini karşıladığından emin oluyoruz."
+      },
+      "generalMaintenance": {
+        "title": "Genel bakım",
+        "description": "Aracınızı optimal durumda tutmak için düzenli bakım hizmetleri."
+      }
     },
-    "hours": {
-      "title": "Çalışma Saatleri",
-      "weekdays": "Pazartesi - Cuma: 9:00 - 18:00",
-      "saturday": "Cumartesi: 9:00 - 17:00",
-      "sunday": "Pazar: Kapalı"
-    },
-    "copyright": {
-      "start": "©",
-      "end": "Garage35. Tüm hakları saklıdır."
+    "callNow": {
+      "title": "Servis rezervasyonu",
+      "description": "Servis veya araç muayenesi rezervasyonu için bizimle iletişime geçin. Aracınızı iyi durumda tutuyoruz."
     }
   }
 }

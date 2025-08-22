@@ -7,13 +7,12 @@ import { useState } from "react";
 import { useListings } from "../context/listingContext";
 import FeaturedCarCard from "./common/FeaturedCarCard";
 import Pagination from "./common/Pagination";
-import { FaCar } from "react-icons/fa";
 
 const ListingsContent = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const { t } = useTranslation();
-  const { isLoading, listings, copiedListings } = useListings();
+  const { isLoading, listings } = useListings();
   const itemsPerPage = 6;
 
   const totalPages = Math.ceil(listings.length / itemsPerPage);
@@ -53,7 +52,7 @@ const ListingsContent = () => {
           <div className="flex-1">
             <SortingOptions />
 
-            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
               {currentItems.length > 0 ? (
                 currentItems.map((car) => (
                   <FeaturedCarCard

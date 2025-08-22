@@ -5,6 +5,7 @@ import {
   FaEuroSign,
   FaGasPump,
   FaCalendarAlt,
+  FaCog,
 } from "react-icons/fa";
 import useTranslation from "../../hooks/useTranslation";
 
@@ -59,18 +60,23 @@ const FeaturedCarCard = ({ car, featured = true }) => {
               </div>
               <div className="flex items-center gap-1 text-gray-600">
                 <FaTachometerAlt className="text-red-500" />
-                <span>{(car.mileage / 1000).toFixed(0)}km</span>
+                <span>
+                  {car.mileage > 1000
+                    ? (car.mileage / 1000).toFixed(0)
+                    : car.mileage}
+                  {car.mileage > 1000 ? "tkm" : "km"}
+                </span>
               </div>
               <div className="flex items-center gap-1 text-gray-600">
                 <FaGasPump className="text-red-500" />
                 <span>{getFuelTypeLabel(car.fuel_type)}</span>
               </div>
-              {/* {car.drive && (
+              {car.drive && (
                 <div className="flex items-center gap-1 text-gray-600">
                   <FaCog className="text-red-500" />
                   <span>{car.drive}</span>
                 </div>
-              )} */}
+              )}
             </div>
           </div>
           <div className="flex items-center justify-between pt-2">

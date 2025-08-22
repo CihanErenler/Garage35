@@ -9,7 +9,7 @@ import CheckboxGroup from "../common/CheckboxGroup";
 import PropTypes from "prop-types";
 import { useListings } from "../../context/listingContext";
 import { useNavigate } from "react-router-dom";
-
+import Button from "../common/Button";
 const SearchCars = ({ bgColor = "bg-gray-950", layout = "default" }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -22,8 +22,13 @@ const SearchCars = ({ bgColor = "bg-gray-950", layout = "default" }) => {
   const [isYearOpen, setIsYearOpen] = useState(false);
   const [isEngineTypeOpen, setIsEngineTypeOpen] = useState(false);
 
-  const { filters, isLoading, searchResultsAmount, updateFilters } =
-    useListings();
+  const {
+    filters,
+    isLoading,
+    searchResultsAmount,
+    updateFilters,
+    resetFilters,
+  } = useListings();
 
   const fuelTypeToShow = useMemo(() => {
     const fuelTypeMapper = {
@@ -187,8 +192,10 @@ const SearchCars = ({ bgColor = "bg-gray-950", layout = "default" }) => {
             onClose={() => setIsPriceOpen(false)}
             icon={BiDollar}
             label={
-              filters.selectedPriceRange[0] === 0 &&
-              filters.selectedPriceRange[1] === 0
+              filters.selectedPriceRange[0] === 0 ||
+              (filters.selectedPriceRange[0] === filters.minPrice &&
+                filters.selectedPriceRange[1] === 0) ||
+              filters.selectedPriceRange[1] === filters.maxPrice
                 ? t("home.search.price")
                 : `${formatPrice(filters.selectedPriceRange[0])} — ${formatPrice(filters.selectedPriceRange[1])}`
             }
@@ -259,23 +266,23 @@ const SearchCars = ({ bgColor = "bg-gray-950", layout = "default" }) => {
           <>
             <button
               className={`${isLightBg ? "text-gray-700" : "text-white"} transition-colors hover:text-gray-500`}
-              onClick={() => {
-                /* Clear all selections */
-              }}
+              onClick={resetFilters}
             >
               {t("home.search.clearSelections")}
             </button>
 
             {layout === "default" && (
               <div className="flex w-full gap-4 md:w-auto">
-                <button
-                  className="flex-1 rounded-lg bg-red-500 px-12 py-3 text-white transition-colors hover:bg-red-600 md:w-[500px]"
+                <Button
+                  variant="primary"
+                  size="large"
+                  className="w-full md:w-[500px]"
                   onClick={() => {
                     navigate("/listing");
                   }}
                 >
-                  SHOW {searchResultsAmount} VEHICLES
-                </button>
+                  {searchResultsAmount} {t("home.search.vehicles")}
+                </Button>
               </div>
             )}
           </>

@@ -1,8 +1,16 @@
-import { Hero, Stats, WhyChooseUs, CarListings, Brands, Testimonials, CallToAction } from '../';
-import ScrollToTop from '../common/ScrollToTop';
-import BuyCarsCTA from './BuyCarsCTA';
-import FinancingCTA from './FinancingCTA';
-import SearchCars from './SearchCars';
+import {
+  Hero,
+  Stats,
+  WhyChooseUs,
+  CarListings,
+  Brands,
+  Testimonials,
+  CallToAction,
+} from "../";
+import ScrollToTop from "../common/ScrollToTop";
+import BuyCarsCTA from "./BuyCarsCTA";
+import FixingCTA from "./FixingCTA";
+import SearchCars from "./SearchCars";
 
 const HomeContent = () => {
   return (
@@ -14,7 +22,7 @@ const HomeContent = () => {
       <Brands />
       <WhyChooseUs />
       <BuyCarsCTA />
-      <FinancingCTA />
+      <FixingCTA />
       <Stats />
       <Testimonials />
       <CallToAction />
@@ -22,4 +30,4 @@ const HomeContent = () => {
   );
 };
 
-export default HomeContent; 
+export default HomeContent;

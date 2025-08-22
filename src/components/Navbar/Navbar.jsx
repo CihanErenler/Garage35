@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import useTranslation from "../../hooks/useTranslation";
+import { useListings } from "../../context/listingContext";
 import LanguageSelector from "./LanguageSelector";
 import navList from "./navList";
 import logo from "../../assets/garage35.svg";
@@ -11,6 +13,23 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const { resetFilters } = useListings();
+  const navigate = useNavigate();
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const onNavClick = (e, to) => {
+    e.preventDefault();
+    navigate(to);
+    resetFilters();
+  };
+
+  // Function to check if link is active
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,15 +39,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  // Function to check if link is active
-  const isActive = (path) => {
-    return location.pathname === path;
-  };
 
   return (
     <nav className="sticky top-0 z-50 bg-gray-950 shadow-sm transition-all duration-300">
@@ -54,7 +64,7 @@ const Navbar = () => {
             {navList.map((item) => (
               <Link
                 key={item.id}
-                to={item.path}
+                onClick={(e) => onNavClick(e, item.path)}
                 className={`font-medium transition-colors ${
                   isActive(item.path)
                     ? "text-red-500"

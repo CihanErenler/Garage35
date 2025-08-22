@@ -105,6 +105,24 @@ export const ListingProvider = ({ children }) => {
     }
   };
 
+  const sortListings = (sortBy) => {
+    const sortedListings = [...listings];
+    if (sortBy === "year-asc") {
+      sortedListings.sort((a, b) => a.year - b.year);
+    } else if (sortBy === "year-desc") {
+      sortedListings.sort((a, b) => b.year - a.year);
+    } else if (sortBy === "price-asc") {
+      sortedListings.sort((a, b) => a.price - b.price);
+    } else if (sortBy === "price-desc") {
+      sortedListings.sort((a, b) => b.price - a.price);
+    } else if (sortBy === "mileage-asc") {
+      sortedListings.sort((a, b) => a.mileage - b.mileage);
+    } else if (sortBy === "mileage-desc") {
+      sortedListings.sort((a, b) => b.mileage - a.mileage);
+    }
+    setListings(sortedListings);
+  };
+
   const filterListings = useCallback(() => {
     let filtered = [...copiedListings];
     const {
@@ -143,6 +161,20 @@ export const ListingProvider = ({ children }) => {
     setSearchResultsAmount(filtered.length);
   }, [copiedListings, filters]);
 
+  const resetFilters = () => {
+    setFilters({
+      ...filters,
+      selectedMakes: [],
+      selectedQuids: [],
+      selectedFuelType: [],
+      selectedGearing: [],
+      selectedPriceRange: [0, 0],
+      selectedYearRange: [0, 0],
+    });
+    setListings(copiedListings);
+    setSearchResultsAmount(copiedListings.length);
+  };
+
   const updateFilters = (key, value) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
     filterListings();
@@ -165,6 +197,8 @@ export const ListingProvider = ({ children }) => {
         filters,
         updateFilters,
         copiedListings,
+        sortListings,
+        resetFilters,
       }}
     >
       {children}

@@ -1,33 +1,37 @@
 import { FaPhone, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import useTranslation from "../../hooks/useTranslation";
+import PropTypes from "prop-types";
 
-const VisitOurShowroom = () => {
+const VisitOurShowroom = ({ description, title }) => {
   const { t } = useTranslation();
 
   const locations = [
     {
       id: 1,
-      name: "Tampere Central",
-      address: "Hatanpään valtatie 34",
+      name: "Kangasala, Finland",
+      address: "Kalliontie 34 36220 Kangasala",
       postal: "33100 Tampere",
-      phone: "+358 123 456 789",
+      phone: "+358447227744",
       hours: {
-        weekdays: "9:00 - 18:00",
-        saturday: "10:00 - 16:00",
-        sunday: "Closed",
+        weekdays: "10:00 - 18:00",
+        saturday: "10:00 - 14:00",
+        sunday: t("about.contact.hours.closed"),
       },
     },
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-24">
+    <section
+      id="visit-our-showroom"
+      className="bg-gradient-to-b from-white to-gray-50 py-24"
+    >
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-900">
-            {t("about.contact.title")}
+            {title || t("about.contact.title")}
           </h2>
           <p className="mb-16 text-lg text-gray-600">
-            {t("about.contact.description")}
+            {description || t("about.contact.description")}
           </p>
 
           <div className="grid gap-8 md:grid-cols-1">
@@ -74,13 +78,16 @@ const VisitOurShowroom = () => {
                     </div>
                     <div className="text-center">
                       <p className="font-medium text-gray-900">
-                        Mon-Fri: {location.hours.weekdays}
+                        {t("about.contact.hours.weekdays")}:{" "}
+                        {location.hours.weekdays}
                       </p>
                       <p className="text-gray-600">
-                        Sat: {location.hours.saturday}
+                        {t("about.contact.hours.saturday")}:{" "}
+                        {location.hours.saturday}
                       </p>
                       <p className="text-gray-600">
-                        Sun: {location.hours.sunday}
+                        {t("about.contact.hours.sunday")}:{" "}
+                        {location.hours.sunday}
                       </p>
                     </div>
                   </div>
@@ -104,6 +111,11 @@ const VisitOurShowroom = () => {
       </div>
     </section>
   );
+};
+
+VisitOurShowroom.propTypes = {
+  description: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default VisitOurShowroom;

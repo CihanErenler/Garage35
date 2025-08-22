@@ -1,12 +1,20 @@
-import { Link } from "react-router-dom";
 import useTranslation from "../../hooks/useTranslation";
+import { useNavigate } from "react-router-dom";
 import SectionTitle from "../common/SectionTitle";
 import FeaturedCarCard from "../common/FeaturedCarCard";
 import { useListings } from "../../context/listingContext";
+import Button from "../common/Button";
 
 const CarListings = () => {
   const { t } = useTranslation();
-  const { latestListings, isLoadingLatestListings } = useListings();
+  const { latestListings, isLoadingLatestListings, resetFilters } =
+    useListings();
+  const navigate = useNavigate();
+
+  const handleViewAllClick = () => {
+    resetFilters();
+    navigate("/listing");
+  };
 
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white py-12">
@@ -29,25 +37,24 @@ const CarListings = () => {
         </div>
 
         <div className="flex justify-center">
-          <Link
-            to="/listing"
-            className="inline-flex items-center justify-center rounded-lg bg-red-500 px-6 py-3 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-red-600"
-          >
-            {t("home.featured.viewAll")}
-            <svg
-              className="ml-2 h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Link>
+          <Button variant="primary" size="large" onClick={handleViewAllClick}>
+            <div className="flex items-center gap-2">
+              {t("home.featured.viewAll")}
+              <svg
+                className="ml-2 h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </Button>
         </div>
       </div>
     </section>

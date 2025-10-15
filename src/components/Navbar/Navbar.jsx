@@ -6,7 +6,7 @@ import useTranslation from "../../hooks/useTranslation";
 import { useListings } from "../../context/listingContext";
 import LanguageSelector from "./LanguageSelector";
 import navList from "./navList";
-import logo from "../../assets/garage35.svg";
+import logo from "../../assets/Garage35.svg";
 
 const Navbar = () => {
   const { t } = useTranslation();

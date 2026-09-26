@@ -3,7 +3,8 @@
     "home": "ETUSIVU",
     "listing": "AUTOT",
     "about": "MEISTÄ",
-    "maintenance": "HUOLTO"
+    "maintenance": "HUOLTO",
+    "complaints": "REKLAMAATIO"
   },
   "home": {
     "hero": {
@@ -202,6 +203,80 @@
       "title": "Löydä meidät",
       "description": "Vieraile näyttelytilassamme tutustuaksesi ensiluokkaiseen ajoneuvovalikoimaamme ja tavataksesi asiantuntijatiimimme"
     }
+  },
+  "complaints": {
+    "hero": {
+      "title": "Reklamaatio",
+      "subtitle": "Jos sinulla on valituksia, ota meihin yhteyttä."
+    },
+    "form": {
+      "title": "Reklamaatiolomake",
+      "selectPlaceholder": "Valitse vaihtoehto",
+      "sections": {
+        "contact": "Yhteystiedot",
+        "vehicle": "Auton tiedot",
+        "details": "Reklamaation tiedot"
+      },
+      "attachmentsHint": "Valinnainen. Enintään 3 tiedostoa, 3 Mt/tiedosto ja yhteensä 9 Mt.",
+      "uploadedFiles": "Valitut tiedostot",
+      "removeFile": "Poista",
+      "issueOptions": {
+        "vehicle_defect": "Virhe autossa",
+        "listing_error": "Virhe myynti-ilmoituksessa",
+        "insurance_or_invoice_error": "Virhe vakuutuksessa tai laskussa",
+        "home_delivery_error": "Virhe kotiintoimituksessa"
+      },
+      "locationOptions": {
+        "engine": "Moottori",
+        "transmission": "Vaihteisto",
+        "drivetrain": "Voimansiirto",
+        "chassis": "Alusta",
+        "brakes": "Jarrut",
+        "tires": "Renkaat",
+        "body": "Kori",
+        "interior": "Sisusta",
+        "other": "Muu virhe? Kerro viasta tarkemmin alla"
+      },
+      "labels": {
+        "name": "Nimi",
+        "email": "Sähköposti",
+        "phone": "Puhelinnumero",
+        "streetAddress": "Katuosoite",
+        "postcode": "Postinumero",
+        "city": "Kaupunki",
+        "registrationNumber": "Rekisterinumero",
+        "mileageAtIncident": "Auton tarkat kilometrit tapahtumahetkellä (kokonaisluku)",
+        "contactPerson": "Olen ollut yhteydessä henkilöön nimeltä",
+        "issue": "Reklamaation aihe",
+        "faultLocation": "Missä virhe sijaitsee?",
+        "description": "Kerro autosi viasta tai tapahtumakulusta vapaamuotoisesti",
+        "attachments": "Liitä tiedosto (valinnainen)"
+      },
+      "placeholders": {
+        "description": "Anna mahdollisimman paljon yksityiskohtia..."
+      },
+      "buttons": {
+        "submitting": "Lähetetään...",
+        "submit": "Lähetä reklamaatio",
+        "submitAnother": "Lähetä toinen reklamaatio"
+      }
+    },
+    "success": {
+      "title": "Reklamaatio lähetetty onnistuneesti",
+      "message": "Käsittelemme reklamaatiosi ja palaamme asiaan mahdollisimman pian."
+    },
+    "errors": {
+      "required": "Tämä kenttä on pakollinen",
+      "emailInvalid": "Anna kelvollinen sähköpostiosoite",
+      "phoneInvalid": "Anna kelvollinen puhelinnumero",
+      "mileageInteger": "Anna positiivinen kokonaisluku tai nolla",
+      "descriptionMinLength": "Anna enemmän tietoja (vähintään 10 merkkiä)",
+      "submitError": "Virhe reklamaation luomisessa",
+      "rateLimited": "Tästä yhteydestä on lähetetty liian monta reklamaatiota. Yritä myöhemmin uudelleen.",
+      "maxAttachments": "Enintään 3 liitettä sallittu",
+      "maxAttachmentSize": "Yksittäinen liite saa olla enintään 3 Mt ja liitteet yhteensä enintään 9 Mt"
+    },
+    "description": "Pahoittelemme, että yhteisellä matkalla on ollut ongelmia. Käsittelemme kaikki reklamaatiot kirjallisesti väärinkäsitysten välttämiseksi ja palaamme asiaan mahdollisimman pian."
   },
   "listings": {
     "noVehicles": "Valituilla suodattimilla ei löytynyt ajoneuvoja",

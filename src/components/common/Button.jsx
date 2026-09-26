@@ -1,18 +1,19 @@
-import PropTypes, { string } from "prop-types";
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
 const Button = ({
   children,
   type = "button",
   className = "",
-  onClick,
+  onClick = () => {},
   disabled = false,
   variant = "primary",
   size = "medium",
   to = "",
 }) => {
   const navigate = useNavigate();
-  const baseStyles = "font-medium rounded-lg transition-colors duration-200";
+  const baseStyles =
+    "font-medium rounded-lg transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-50";
   const variants = {
     primary: "bg-red-500 text-white hover:bg-red-600",
     outline: "border-2 border-red-500 text-red-500 hover:bg-red-50 bg-white",

@@ -3,7 +3,8 @@
     "home": "ANA SAYFA",
     "listing": "ARAÇLAR",
     "about": "HAKKIMIZDA",
-    "maintenance": "SERVİS"
+    "maintenance": "SERVİS",
+    "complaints": "ŞİKAYETLER"
   },
   "home": {
     "hero": {
@@ -202,6 +203,70 @@
       "title": "Bizi bulun",
       "description": "Premium araç seçeneklerimizi keşfetmek ve uzman ekibimizle tanışmak için showroomumuzu ziyaret edin"
     }
+  },
+  "complaints": {
+    "hero": {
+      "title": "Şikayetler",
+      "subtitle": "Herhangi bir şikayetiniz varsa lütfen bizimle iletişime geçin."
+    },
+    "form": {
+      "title": "Şikayet formu",
+      "selectPlaceholder": "Bir seçenek seçin",
+      "sections": { "contact": "İletişim bilgileri", "vehicle": "Araç bilgileri", "details": "Şikayet ayrıntıları" },
+      "attachmentsHint": "İsteğe bağlı. En fazla 3 dosya; dosya başına 3 MB, toplam 9 MB.",
+      "uploadedFiles": "Seçilen dosyalar",
+      "removeFile": "Kaldır",
+      "issueOptions": {
+        "vehicle_defect": "Araçta kusur",
+        "listing_error": "Araç ilanında hata",
+        "insurance_or_invoice_error": "Sigorta veya faturada hata",
+        "home_delivery_error": "Eve teslimatta hata"
+      },
+      "locationOptions": {
+        "engine": "Motor", "transmission": "Şanzıman", "drivetrain": "Aktarma organları",
+        "chassis": "Şasi", "brakes": "Frenler", "tires": "Lastikler",
+        "body": "Kaporta", "interior": "İç mekan", "other": "Diğer sorun — aşağıda açıklayın"
+      },
+      "labels": {
+        "name": "İsim",
+        "email": "E-posta",
+        "phone": "Telefon numarası",
+        "streetAddress": "Sokak adresi",
+        "postcode": "Posta kodu",
+        "city": "Şehir",
+        "registrationNumber": "Plaka numarası",
+        "mileageAtIncident": "Sorun yaşandığı andaki tam kilometre (tam sayı)",
+        "contactPerson": "İletişime geçtiğim kişinin adı",
+        "issue": "Şikayetin konusu",
+        "faultLocation": "Sorun nerede?",
+        "description": "Araçtaki kusuru veya yaşananları kendi sözlerinizle anlatın",
+        "attachments": "Dosya ekle (isteğe bağlı)"
+      },
+      "placeholders": {
+        "description": "Lütfen mümkün olduğunca ayrıntılı bilgi verin..."
+      },
+      "buttons": {
+        "submitting": "Gönderiliyor...",
+        "submit": "Şikayeti Gönder",
+        "submitAnother": "Başka bir şikayet gönder"
+      }
+    },
+    "success": {
+      "title": "Şikayet başarıyla gönderildi",
+      "message": "Şikayetinizi inceleyip en kısa sürede size geri dönüş yapacağız."
+    },
+    "errors": {
+      "required": "Bu alan zorunludur",
+      "emailInvalid": "Lütfen geçerli bir e-posta adresi girin",
+      "phoneInvalid": "Lütfen geçerli bir telefon numarası girin",
+      "mileageInteger": "Sıfır veya pozitif bir tam sayı girin",
+      "descriptionMinLength": "Lütfen daha fazla detay verin (en az 10 karakter)",
+      "submitError": "Şikayet oluşturulurken hata oluştu",
+      "rateLimited": "Bu bağlantıdan çok fazla şikayet gönderildi. Lütfen daha sonra tekrar deneyin.",
+      "maxAttachments": "En fazla 3 ek dosyaya izin verilir",
+      "maxAttachmentSize": "Her dosya en fazla 3 MB, toplam dosya boyutu en fazla 9 MB olabilir"
+    },
+    "description": "Birlikte yolculuğumuz sırasında bazı sorunlar yaşandığı için üzgünüz. Yanlış anlamaları önlemek için tüm şikayetleri yazılı olarak işliyoruz ve en kısa sürede size geri dönüş yapacağız."
   },
   "listings": {
     "noVehicles": "Seçilen filtrelerle araç bulunamadı",

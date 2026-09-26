@@ -19,6 +19,11 @@ const navList = [
     name: "nav.maintenance",
     path: "/maintenance",
   },
+  {
+    id: 5,
+    name: "nav.complaints",
+    path: "/complaints",
+  },
 ];
 
 export default navList;

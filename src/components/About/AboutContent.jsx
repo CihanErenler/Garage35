@@ -3,7 +3,7 @@ import Map from "../common/Map";
 import PageHero from "../common/PageHero";
 import hero from "../../assets/hero.jpg";
 import Story from "./Story";
-import Values from "./Values";
+// import Values from "./Values";
 import VisitOurShowroom from "./VisitOurShowroom";
 
 const AboutContent = () => {

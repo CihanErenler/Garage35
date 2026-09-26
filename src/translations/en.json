@@ -3,7 +3,8 @@
     "home": "HOME",
     "listing": "CARS",
     "about": "ABOUT",
-    "maintenance": "SERVICE"
+    "maintenance": "SERVICE",
+    "complaints": "COMPLAINTS"
   },
   "home": {
     "hero": {
@@ -160,6 +161,70 @@
       "start": "©",
       "end": "Garage35. All rights reserved."
     }
+  },
+  "complaints": {
+    "hero": {
+      "title": "Complaints",
+      "subtitle": "If you have any complaints, please contact us."
+    },
+    "form": {
+      "title": "Complaint form",
+      "selectPlaceholder": "Select an option",
+      "sections": { "contact": "Contact details", "vehicle": "Vehicle details", "details": "Complaint details" },
+      "attachmentsHint": "Optional. Up to 3 files, 3 MB each and 9 MB in total.",
+      "uploadedFiles": "Selected files",
+      "removeFile": "Remove",
+      "issueOptions": {
+        "vehicle_defect": "Defect in the car",
+        "listing_error": "Error in the vehicle listing",
+        "insurance_or_invoice_error": "Error in insurance or invoice",
+        "home_delivery_error": "Error in home delivery"
+      },
+      "locationOptions": {
+        "engine": "Engine", "transmission": "Transmission", "drivetrain": "Drivetrain",
+        "chassis": "Chassis", "brakes": "Brakes", "tires": "Tires",
+        "body": "Body", "interior": "Interior", "other": "Other fault — describe it below"
+      },
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone number",
+        "streetAddress": "Street address",
+        "postcode": "Postcode",
+        "city": "City",
+        "registrationNumber": "Registration number",
+        "mileageAtIncident": "Exact mileage when the issue occurred (whole number)",
+        "contactPerson": "Name of the person you contacted",
+        "issue": "Subject of complaint",
+        "faultLocation": "Where is the fault located?",
+        "description": "Describe the fault or what happened in your own words",
+        "attachments": "Attach files (optional)"
+      },
+      "placeholders": {
+        "description": "Please provide as much detail as possible..."
+      },
+      "buttons": {
+        "submitting": "Submitting...",
+        "submit": "Submit Complaint",
+        "submitAnother": "Submit another complaint"
+      }
+    },
+    "success": {
+      "title": "Complaint sent successfully",
+      "message": "We will review your complaint and get back to you as soon as possible."
+    },
+    "errors": {
+      "required": "This field is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "mileageInteger": "Enter a non-negative whole number",
+      "descriptionMinLength": "Please provide more detail (at least 10 characters)",
+      "submitError": "Error creating complaint",
+      "rateLimited": "Too many submissions from this connection. Please try again later.",
+      "maxAttachments": "Maximum of 3 attachments allowed",
+      "maxAttachmentSize": "Each file must be 3 MB or less, and the total must be 9 MB or less"
+    },
+    "description": "We are sorry that there have been some problems during our journey together. We handle all complaints in writing to avoid misunderstandings and will get back to you as soon as possible."
   },
   "about": {
     "hero": {
